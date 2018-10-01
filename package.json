@@ -1,0 +1,11 @@
+{
+  "name": "makerparkradio",
+  "version": "1.0.0",
+  "description": "A livestream community radio service streaming out of the Staten Island Makerspace!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antoun Sawires",
+  "license": "ISC"
+}
