@@ -1,6 +1,7 @@
+
+<html>
+
 <head>
-{{attach_library('makerparktheme/bootstrap') }}
-{{attach_library('makerparktheme/popper')}}
 
 <meta charset="utf-8">
 <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
@@ -13,7 +14,6 @@
 
 </head>
 
-<html>
 
   <div class="livestream" style="width: 100%; height: 100%;">
   <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div>
@@ -175,3 +175,4 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
