@@ -8,8 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/boostrap.min.css">
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
