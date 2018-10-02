@@ -12,25 +12,25 @@
             </a>
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                      <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/about">About</a>
+                      <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/schedule">Schedule</a>
+                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/schedule">Schedule</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/shows.php">Shows</a>
+                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/shows.php">Shows</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/archive.php">Archive</a>
+                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/archive.php">Archive</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/donors">Donors</a>
+                    <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/donors">Donors</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/supportmpr">Donate/Sponsor</a>
+                    <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;" href="/supportmpr">Donate/Sponsor</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/shop">Shop</a>
+                    <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;" href="/shop">Shop</a>
                   </li>
               </ul>
 
@@ -44,10 +44,6 @@
               img {
                 width: 60%;
                 height: auto;
-              }
-
-              nav-link {
-                background: #6F6F70;
               }
 
               </style>
