@@ -46,8 +46,8 @@
                 height: auto;
               }
 
-              nav-item {
-                background: #393939;
+              nav-link {
+                background: #6F6F70;
               }
 
               </style>
