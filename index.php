@@ -65,31 +65,8 @@
 
       <!--End mc_embed_signup-->
 </center>
-<center>
-<img class="container" src="/sites/default/files/mprphotos/appimage.png" style="height: 175px; width: 200px;">
-</center>
-
-
-<div class="container gry" style="width: 60%; height: 20%; padding-bottom: 25px;">
-
-
-  <h2 class="my-4 text-center text-white container">Listen on the go with the Maker Park Radio App!</h2>
-
-
-
-  <div class="row center container" style="padding-left: 27%;">
-    <center>
-    <a class="column" href="https://itunes.apple.com/us/app/makerpark-radio/id1400059324?mt=8" ><img src="/sites/default/files/mprphotos/appstore.png" style="height: 80px; width: 230px;"/></a>
-    <a class="column" href="#" ><img src="/sites/default/files/mprphotos/android.png" style="height: 80px; width: 230px;"/></a>
-    </center>
-  </div>
-
-</div>
-
-
-
       <!-- SnapWidget -->
-      <div class="container" style="padding-top: 25px;">
+      <div class="container">
         <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
@@ -101,7 +78,7 @@
 </div>
 
 
-<div class="container gry" style="width: 50%; height: 150%;">
+<div class="container gry" style="width: 50%; height: 100%;">
 
   <h1 class="my-4 text-center text-white">Our Sponsors</h1>
 <center>
@@ -152,16 +129,6 @@
             <img class="" src="/sites/default/files/mprsponsors/sibeercompany.png" alt="">
           </a>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://www.richmondhood.com/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/RHC_LOGO_FULL.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://sundogtheatre.org/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/sundoglogo.png" alt="">
-          </a>
-        </div>
         <h2 class="my-4 text-center text-white container">"This project was funded in part by an NYSCA Encore Grant"</h2>
       </div>
     </div>
@@ -205,10 +172,6 @@
 </center>
   </div>
 
-<script type="text/javascript" src="jquery.">
-
-</script>
-
-
-
-</html>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
