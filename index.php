@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
 <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="includes/frontpg.css">
 
 </head>
 
@@ -138,42 +139,6 @@
       </div>
     </div>
 
-    <style>
-
-    @media only screen and (max-width: 700px) {
-
-    .container {
-    width: 800px;
-    zoom: 60%;
-    }
-
-        }
-
-
-    .gry {
-
-      background-color: #6F6F70;
-      width: 100%;
-
-    }
-
-    .wbackground {
-
-      background-color: #6F6F70;
-    }
-
-    .profile-name {
-      color: white;
-
-    }
-
-    .caption {
-      color: white;
-    }
-}
-
-
-    </style>
 </center>
   </div>
 

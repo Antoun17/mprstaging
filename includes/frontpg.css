@@ -1,0 +1,30 @@
+@media only screen and (max-width: 700px) {
+
+.container {
+width: 800px;
+zoom: 60%;
+}
+
+    }
+
+
+.gry {
+
+  background-color: #6F6F70;
+  width: 100%;
+
+}
+
+.wbackground {
+
+  background-color: #6F6F70;
+}
+
+.profile-name {
+  color: white;
+
+}
+
+.caption {
+  color: white;
+}
