@@ -1,9 +1,6 @@
 <html>
   <head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
     <meta charset="utf-8">
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
     <meta property="og:image"content="/sites/default/files/mprshows/mprlogo.png" />
@@ -11,6 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/boostrap.min.css">
 
     <script>
       // You can also require other files to run in this process
@@ -24,7 +22,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
-      
+
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/about">About</a>
