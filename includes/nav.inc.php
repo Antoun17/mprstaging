@@ -46,6 +46,10 @@
                 height: auto;
               }
 
+              nav-item {
+                background: #393939;
+              }
+
               </style>
           </div>
       </nav>
