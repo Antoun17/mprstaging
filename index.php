@@ -24,9 +24,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
-          <a class="navbar-brand" href="/">
-            <img class="mr-auto"src="Navbarlogo.png" width="85px" height="80px">
-          </a>
+      
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/about">About</a>
