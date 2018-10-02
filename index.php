@@ -14,6 +14,8 @@
 
 </head>
 
+<?php include("assets/nav.inc.php"); ?>
+
 
   <div class="livestream" style="width: 100%; height: 100%;">
   <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div>
