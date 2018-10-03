@@ -122,8 +122,14 @@
     $('body').on('click', '.chat_box .input_send', function(e) {
         e.preventDefault();
         var message = $('.chat_box .input_message').val();
-
-        var chat_message = {
+        var name = $('.chat_box .input_name').val();
+        // Validate Name field
+        if (name === '') {
+            bootbox.alert('<br /><p class = "bg-danger">Please enter a Name.</p>');
+        }
+    	else if (message !== '') {
+            // Define ajax data
+            var chat_message = {
                 name: $('.chat_box .input_name').val(),
                 message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
             }
