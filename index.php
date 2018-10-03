@@ -141,23 +141,22 @@
 
 </center>
 
-<?php
-  require __DIR__ . '/vendor/autoload.php';
+<script src="https://js.pusher.com/4.3/pusher.min.js"></script>
+<script>
 
-  $options = array(
-    'cluster' => 'mt1',
-    'useTLS' => true
-  );
-  $pusher = new Pusher\Pusher(
-    '625925458b678e882996',
-    '7542783946b168ea8f60',
-    '613118',
-    $options
-  );
+  // Enable pusher logging - don't include this in production
+  Pusher.logToConsole = true;
 
-  $data['message'] = 'hello world';
-  $pusher->trigger('my-channel', 'my-event', $data);
-?>
+  var pusher = new Pusher('625925458b678e882996', {
+    cluster: 'mt1',
+    forceTLS: true
+  });
+
+  var channel = pusher.subscribe('my-channel');
+  channel.bind('my-event', function(data) {
+    alert(JSON.stringify(data));
+  });
+</script>
 
 
 
