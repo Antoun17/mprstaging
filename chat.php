@@ -23,7 +23,7 @@
 			<input type = "text" class = "input_name form-control" placeholder = "Enter Name" />
 		</div>
 		<div class = "form-group">
-			<textarea class = "input_message form-control" placeholder = "Enter Message" rows="5"></textarea>
+			<textarea name="message" class = "input_message form-control" placeholder = "Enter Message" rows="5"></textarea>
 		</div>
 		<div class = "form-group input_send_holder">
 			<input type = "submit" value = "Send" class = "btn btn-primary btn-block input_send" />
