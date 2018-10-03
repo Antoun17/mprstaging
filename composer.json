@@ -1,5 +1,6 @@
 {
     "require": {
-        "pusher/pusher-chatkit-server": "^0.5.9"
+        "pusher/pusher-chatkit-server": "^0.5.9",
+        "pusher/pusher-php-server": "^3.2"
     }
 }
