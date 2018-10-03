@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Create your own pusher account @ https://app.pusher.com
 $options = array(
    'cluster' => 'mt1',
-   'encrypted' => true
+     'useTLS' => true
  );
  $pusher = new Pusher\Pusher(
    '625925458b678e882996',
