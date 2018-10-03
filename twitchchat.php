@@ -19,14 +19,14 @@
             <p>Maker Park Radio Chat</p>
             <hr>
         </div>
-        <div class="form-control messages_display" id="chat-area-scrollable-middle"></div>
+        <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 100%; width: 100%;"></div>
         <div id="chat-area-footer">
             <textarea id="chat-textbox" class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
             <div style="margin-top: 10px;">
                 <div style="position: fixed; left: 2%;">
                     <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                 </div>
-                <button id="send-button" type = "submit" class="btn btn-sm btn-success input_send">Send</button>
+                <button id="send-button" type = "submit" class="input_send_holder btn btn-sm btn-success input_send">Send</button>
             </div>
         </div>
 
