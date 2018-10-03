@@ -40,7 +40,7 @@
 // Add API Key & cluster here to make the connection
 var pusher = new Pusher('625925458b678e882996', {
     cluster: 'mt1',
-    encrypted: false
+    useTLS: true
 });
 // Enter a unique channel you wish your users to be subscribed in.
 var channel = pusher.subscribe('my-channel');
