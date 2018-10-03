@@ -97,7 +97,7 @@ $('body').on('click', '.chat_box .input_send', function(e) {
         }
         //console.log(chat_message);
         // Send the message to the server passing File Url and chat person name & message
-        ajaxCall('http://phpstack-71265-406587.cloudwaysapps.com/message_relay.php', chat_message);
+        ajaxCall('messages.php', chat_message);
         // Clear the message input field
         $('.chat_box .input_message').val('');
         // Show a loading image while sending
