@@ -85,7 +85,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
 
 <button class="open-button" onclick="openForm()">Chat</button>
-
+<iframe>
 <div class="chat-popup" id="myForm">
   <div class="chat_box">
     <div class = "form-group">
@@ -108,6 +108,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     </div>
   </div>
 </div>
+</iframe>
 
 <script>
 function openForm() {
