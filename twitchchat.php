@@ -28,7 +28,9 @@
                 <div style="position: fixed; left: 2%;">
                     <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                 </div>
-                <button id="send-button" type = "submit" value = "Send" class="input_send_holder btn btn-sm btn-success input_send">Send</button>
+                <div class="form-group input_send_holder">
+                  <input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send">
+                </div>
             </div>
         </div>
 
