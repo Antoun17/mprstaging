@@ -92,7 +92,7 @@
         function(data) {
             //console.log(data);
             $('.messages_display').append('<p class = "message_item">' + data + '</p>');
-            $('.input_send_holder').html('<input type = "submit" value = "Send" class = "btn btn-primary btn-block input_send" />');
+            $('.input_send_holder').html('<input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send" />');
             $(".messages_display").scrollTop($(".messages_display")[0].scrollHeight);
         });
     // check if the user is subscribed to the above channel
@@ -143,8 +143,7 @@
             ajaxCall('messages.php', chat_message);
             // Clear the message input field
             $('.chat_box .input_message').val('');
-            // Show a loading image while sending
-            $('.input_send_holder').html('<input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send" disabled /> &nbsp;<img     src = "loading.gif" />');
+
         }
     });
     // Send the message when enter key is clicked
