@@ -146,20 +146,6 @@
 
 <button onclick="myFunction()">Try it</button>
 
-
-<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("chat_window");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
-
 <div class="chat_window">
     <div class="top_menu">
         <div class="buttons">
@@ -180,6 +166,21 @@ function myFunction() {
         </div>
     </div>
 </div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("chat_window");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
 <div class="message_template">
     <li class="message">
         <div class="avatar"></div>
