@@ -140,6 +140,27 @@
     </div>
 
 </center>
+
+<?php
+  require __DIR__ . '/vendor/autoload.php';
+
+  $options = array(
+    'cluster' => 'mt1',
+    'useTLS' => true
+  );
+  $pusher = new Pusher\Pusher(
+    '625925458b678e882996',
+    '7542783946b168ea8f60',
+    '613118',
+    $options
+  );
+
+  $data['message'] = 'hello world';
+  $pusher->trigger('my-channel', 'my-event', $data);
+?>
+
+
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
