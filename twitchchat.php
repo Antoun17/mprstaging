@@ -17,14 +17,14 @@
             <p>Twitch Chat Boostrap</p>
             <hr>
         </div>
-        <div id="chat-area-scrollable-middle"></div>
+        <div class="form-control messages_display" id="chat-area-scrollable-middle"></div>
         <div id="chat-area-footer">
-            <textarea id="chat-textbox" rows="2" placeholder="Send a message"></textarea>
+            <textarea class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
             <div style="margin-top: 10px;">
                 <div style="position: fixed; left: 2%;">
                     <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                 </div>
-                <button id="send-button" class="btn btn-sm btn-success">Send</button>
+                <button type = "submit" class="btn btn-sm btn-success input_send">Send</button>
             </div>
         </div>
 
@@ -67,8 +67,84 @@
         </div>
     </body>
 
+    <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="includes/twitch-chat.js"></script>
+    	<script type="text/javascript">
+
+    // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+    // Add API Key & cluster here to make the connection
+    var pusher = new Pusher('625925458b678e882996', {
+        cluster: 'mt1',
+        useTLS: true
+    });
+    // Enter a unique channel you wish your users to be subscribed in.
+    var channel = pusher.subscribe('my-channel');
+    // bind the server event to get the response data and append it to the message div
+    channel.bind('my-event',
+        function(data) {
+            //console.log(data);
+            $('.messages_display').append('<p class = "message_item">' + data + '</p>');
+            $('.input_send_holder').html('<input type = "submit" value = "Send" class = "btn btn-primary btn-block input_send" />');
+            $(".messages_display").scrollTop($(".messages_display")[0].scrollHeight);
+        });
+    // check if the user is subscribed to the above channel
+    channel.bind('pusher:subscription_succeeded', function(members) {
+        console.log('successfully subscribed!');
+    });
+    // Send AJAX request to the PHP file on server
+    function ajaxCall(ajax_url, ajax_data) {
+        $.ajax({
+            type: "POST",
+            url: ajax_url,
+            //dataType: "json",
+            data: ajax_data,
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(msg) {}
+        });
+    }
+    // Trigger for the Enter key when clicked.
+    $.fn.enterKey = function(fnc) {
+        return this.each(function() {
+            $(this).keypress(function(ev) {
+                var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+                if (keycode == '13') {
+                    fnc.call(this, ev);
+                }
+            });
+        });
+    }
+    // Send the Message enter by User
+    $('body').on('click', '.chat_box .input_send', function(e) {
+        e.preventDefault();
+        var message = $('.chat_box .input_message').val();
+        var name = $('.chat_box .input_name').val();
+        // Validate Name field
+        if (name === '') {
+            bootbox.alert('<br /><p class = "bg-danger">Please enter a Name.</p>');
+        }
+    	else if (message !== '') {
+            // Define ajax data
+            var chat_message = {
+                name: $('.chat_box .input_name').val(),
+                message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
+            }
+            //console.log(chat_message);
+            // Send the message to the server passing File Url and chat person name & message
+            ajaxCall('messages.php', chat_message);
+            // Clear the message input field
+            $('.chat_box .input_message').val('');
+            // Show a loading image while sending
+            $('.input_send_holder').html('<input type = "submit" value = "Send" class = "btn btn-primary btn-block" disabled /> &nbsp;<img     src = "loading.gif" />');
+        }
+    });
+    // Send the message when enter key is clicked
+    $('.chat_box .input_message').enterKey(function(e) {
+        e.preventDefault();
+        $('.chat_box .input_send').click();
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</html>
