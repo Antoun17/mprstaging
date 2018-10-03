@@ -20,7 +20,7 @@
           <input type = "text" class = "input_name form-control" placeholder = "Please Enter a Name!" />
         </div>
         <div id="chat-area-header">
-            <p>Maker Park Radio Chat</p>
+            <h2>Maker Park Radio Chat</h2>
         </div>
         <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height:75%; width: 100%;"></div>
         <div id="chat-area-footer">
