@@ -15,72 +15,68 @@
 
     </head>
 
-    <body>
-      <div class="chat_box">
-        <div class = "form-group">
-          <input type = "text" class = "input_name form-control" placeholder = "Please Enter a Name!" />
-        </div>
-        <div id="chat-area-header">
-            <h2>Maker Park Radio Chat</h2>
-        </div>
-        <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height:75%; width: 100%;"></div>
-        <div id="chat-area-footer">
-            <textarea id="chat-textbox" class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
-            <div style="margin-top: 10px;">
-                <div style="position: fixed; left: 2%;">
-                    <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
-                </div>
-                <div class="form-group input_send_holder">
-                  <input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send">
-                </div>
+    <link href="sidebarchat.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <div class="chat_box">
+            <div class = "form-group">
+              <input type = "text" class = "input_name form-control" placeholder = "Please Enter a Name!" />
             </div>
-        </div>
-      </div>
-
-
-
-        <!-- user color select modal -->
-        <div id="settings-modal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-
-            <div class="modal-content" style="height: 220px; width: 220px;">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <span class="modal-title" style="color: #706a7c;">CHAT OPTIONS</span>
-                </div>
-                <div class="modal-body">
-                    <div id="chat-color-options">
-                        <div style="background-color:#FF0000;"></div>
-                        <div style="background-color: #0000FF;"></div>
-                        <div style="background-color: #008000;"></div>
-                        <div style="background-color: #B22222;"></div>
-                        <div style="background-color: #FF7F50;"></div>
-                        <div style="background-color: #9ACD32;"></div>
-                        <div style="background-color: #FF4500;"></div>
-                        <div style="background-color: #2E8B57;"></div>
-                        <div style="background-color: #DAA520;"></div>
-                        <div style="background-color: #D2691E;"></div>
-                        <div style="background-color: #5F9EA0;"></div>
-                        <div style="background-color: #1E90FF;"></div>
-                        <div style="background-color: #FF69B4;"></div>
-                        <div style="background-color: #8A2BE2;"></div>
-                        <div style="background-color: #00FF7F;"></div>
+            <div id="chat-area-header">
+                <h2>Maker Park Radio Chat</h2>
+            </div>
+            <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height:75%; width: 100%;"></div>
+            <div id="chat-area-footer">
+                <textarea id="chat-textbox" class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
+                <div style="margin-top: 10px;">
+                    <div style="position: fixed; left: 2%;">
+                        <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                     </div>
-                    <div>
-                        <div style="margin-top: 100px;">
-                            <input id="show-timestamp-checkbox" type="checkbox" value="timestamps" checked>
-                            <span>Timestamp</span>
-                        </div>
+                    <div class="form-group input_send_holder">
+                      <input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send">
                     </div>
                 </div>
             </div>
           </div>
         </div>
-    </body>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Simple Sidebar</h1>
+                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
     <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
 
-    	<script type="text/javascript">
+      <script type="text/javascript">
 
     // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
@@ -136,7 +132,7 @@
         if (name === '') {
             bootbox.alert('<br /><p class = "bg-danger">Please enter a Name.</p>');
         }
-    	else if (message !== '') {
+      else if (message !== '') {
             // Define ajax data
             var chat_message = {
                 name: $('.chat_box .input_name').val(),
@@ -156,6 +152,10 @@
         $('.chat_box .input_send').click();
     });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
