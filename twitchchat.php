@@ -17,7 +17,9 @@
     <body>
         <div id="chat-area-header">
             <p>Maker Park Radio Chat</p>
-            <hr>
+            <div class = "form-group">
+        			<input type = "text" class = "input_name form-control" placeholder = "Enter Name" />
+        		</div>  
         </div>
         <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 100%; width: 100%;"></div>
         <div id="chat-area-footer">
