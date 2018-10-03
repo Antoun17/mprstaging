@@ -16,13 +16,13 @@
 
     <body>
       <div class="chat_box">
+        <div class = "form-group">
+          <input type = "text" class = "input_name form-control" placeholder = "Enter Name" />
+        </div>
         <div id="chat-area-header">
             <p>Maker Park Radio Chat</p>
-            <div class = "form-group">
-        			<input type = "text" class = "input_name form-control" placeholder = "Enter Name" />
-        		</div>
         </div>
-        <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 100%; width: 100%;"></div>
+        <div class="form-control messages_display" style="height: 100%; width: 100%;"></div>
         <div id="chat-area-footer">
             <textarea id="chat-textbox" class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
             <div style="margin-top: 10px;">
