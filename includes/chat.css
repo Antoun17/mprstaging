@@ -79,6 +79,7 @@ body {
 
 #send-button {
     position: fixed;
+    padding-bottom: 10px;
     right: 2%;
     background-color: #6441a4;
     color: white;
