@@ -32,7 +32,7 @@
             <div id="chat-area-header">
                 <p>Maker Park Radio Chat</p>
             </div>
-            <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height:75%; width: 100%;"></div>
+            <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 400px; width: 100%;"></div>
             <div style="padding-top: 10px;">
                 <textarea class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
                 <div style="margin-top: 10px;">
