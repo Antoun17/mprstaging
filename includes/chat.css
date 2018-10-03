@@ -1,5 +1,5 @@
 body {
-    background-color: #333333;
+    background-color: #efeef1;
     height: 100%;
     width: 100%;
     font-size: 12px;
@@ -19,7 +19,7 @@ body {
 }
 
 #chat-area-header hr {
-    border-color: #6F6F70;
+    border-color: #dad8de;
     margin-top: 18px;
     margin-bottom: 10px;
 }
@@ -39,7 +39,7 @@ body {
 #chat-area-footer textarea {
     width: 96%;
     margin-left: 2%;
-    border: 1px solid #6F6F70;
+    border: 1px solid #dad8de;
     padding-left: 6px;
 }
 
@@ -107,7 +107,5 @@ body {
 }
 
 .messages_display {
-  background: #6F6F70;
   overflow: scroll;
-  color: white;
 }
