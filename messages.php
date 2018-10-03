@@ -22,4 +22,3 @@ echo 'success';
 echo 'error';
 }
 }
-}
