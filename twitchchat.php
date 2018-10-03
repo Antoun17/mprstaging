@@ -144,7 +144,7 @@
             // Clear the message input field
             $('.chat_box .input_message').val('');
             // Show a loading image while sending
-            $('.input_send_holder').html('<input id="send-button" type = "submit" value = "Send" class = "btn btn-primary btn-block" disabled /> &nbsp;<img     src = "loading.gif" />');
+            $('.input_send_holder').html('<input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send" disabled /> &nbsp;<img     src = "loading.gif" />');
         }
     });
     // Send the message when enter key is clicked
