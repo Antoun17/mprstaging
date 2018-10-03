@@ -15,6 +15,7 @@
     </head>
 
     <body>
+      <div class="chat_box">
         <div id="chat-area-header">
             <p>Maker Park Radio Chat</p>
             <div class = "form-group">
@@ -33,7 +34,7 @@
                 </div>
             </div>
         </div>
-
+      </div>
         <!-- user color select modal -->
         <div id="settings-modal" class="modal fade" role="dialog">
           <div class="modal-dialog">
