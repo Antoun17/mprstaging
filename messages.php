@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Create your own pusher account @ https://app.pusher.com
 $options = array(
    'cluster' => 'mt1',
-   'useTLS' => true
+   'encrypted' => true
  );
  $pusher = new Pusher\Pusher(
    '625925458b678e882996',
@@ -20,5 +20,6 @@ if($pusher->trigger('my-channel', 'my-event', $data)) {
 echo 'success';
 } else {
 echo 'error';
+}
 }
 }
