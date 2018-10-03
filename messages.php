@@ -3,7 +3,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Change the following with your app details:
 // Create your own pusher account @ https://app.pusher.com
 $options = array(
-   'cluster' => 'ap2',
+   'cluster' => 'mt1',
    'encrypted' => true
  );
  $pusher = new Pusher\Pusher(
