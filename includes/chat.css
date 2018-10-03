@@ -107,5 +107,7 @@ body {
 }
 
 .messages_display {
+  background: #6F6F70;
   overflow: scroll;
+  color: white;
 }
