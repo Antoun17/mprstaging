@@ -16,17 +16,17 @@
 
     <body>
         <div id="chat-area-header">
-            <p>Twitch Chat Boostrap</p>
+            <p>Maker Park Radio Chat</p>
             <hr>
         </div>
         <div class="form-control messages_display" id="chat-area-scrollable-middle"></div>
         <div id="chat-area-footer">
-            <textarea class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
+            <textarea id="chat-textbox" class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
             <div style="margin-top: 10px;">
                 <div style="position: fixed; left: 2%;">
                     <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                 </div>
-                <button type = "submit" class="btn btn-sm btn-success input_send">Send</button>
+                <button id="send-button" type = "submit" class="btn btn-sm btn-success input_send">Send</button>
             </div>
         </div>
 
