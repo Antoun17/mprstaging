@@ -19,7 +19,7 @@
             <p>Maker Park Radio Chat</p>
             <div class = "form-group">
         			<input type = "text" class = "input_name form-control" placeholder = "Enter Name" />
-        		</div>  
+        		</div>
         </div>
         <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 100%; width: 100%;"></div>
         <div id="chat-area-footer">
@@ -28,7 +28,7 @@
                 <div style="position: fixed; left: 2%;">
                     <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
                 </div>
-                <button id="send-button" type = "submit" class="input_send_holder btn btn-sm btn-success input_send">Send</button>
+                <button id="send-button" type = "submit" value = "Send" class="input_send_holder btn btn-sm btn-success input_send">Send</button>
             </div>
         </div>
 
