@@ -17,7 +17,7 @@ body {
 }
 
 #wrapper.toggled {
-  padding-left: 250px;
+  padding-left: 350px;
 }
 
 #sidebar-wrapper {
@@ -47,7 +47,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -250px;
+  margin-right: -350px;
 }
 
 
