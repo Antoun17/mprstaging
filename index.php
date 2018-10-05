@@ -144,6 +144,7 @@
 
 </center>
 
+<<<<<<< HEAD
 <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
 
 
@@ -239,6 +240,8 @@ $(document).ready(function(){
 
 
 
+=======
+>>>>>>> f172e9fddaf1225ed9ac9069652e0741770144d5
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
