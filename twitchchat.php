@@ -35,13 +35,8 @@
             <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 400px; width: 100%;"></div>
             <div style="padding-top: 10px;">
                 <textarea class=" input_message form-control" rows="2" placeholder="Send a message"></textarea>
-                <div style="margin-top: 10px;">
-                    <div style="position: fixed; left: 2%;">
-                        <span id="settings-button" class="glyphicon glyphicon-cog" aria-hidden="true" data-toggle="modal" data-target="#settings-modal"></span>
-                    </div>
-                    <div class="form-group input_send_holder">
-                      <input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send">
-                    </div>
+                <div class="form-group input_send_holder">
+                  <input id="send-button" type="submit" value="Send" class="btn btn-sm btn-success input_send">
                 </div>
             </div>
           </div>
