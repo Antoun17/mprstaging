@@ -26,7 +26,7 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <div class="chat_box">
-            <div id="chat-area-header">
+            <div style="padding-top: 25px; "id="chat-area-header">
                 <p>Maker Park Radio Chat</p>
             </div>
             <div class = "form-group">
