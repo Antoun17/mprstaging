@@ -26,11 +26,11 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
           <div class="chat_box">
-            <div class = "form-group">
-              <input type = "text" class = "input_name form-control" placeholder = "Please Enter a Name!" />
-            </div>
             <div id="chat-area-header">
                 <p>Maker Park Radio Chat</p>
+            </div>
+            <div class = "form-group">
+              <input type = "text" class = "input_name form-control" placeholder = "Please Enter a Name!" />
             </div>
             <div class="form-control messages_display" id="chat-area-scrollable-middle" style="height: 400px; width: 100%;"></div>
             <div style="padding-top: 10px;">
