@@ -68,7 +68,7 @@
 <main class="main-area">
 <?php
   // Create connection
-  $conn = mysqli_connect(159.203.163.232", "admin", "mprnyc1", "drupal");
+  $conn = mysqli_connect("159.203.163.232", "admin", "mprnyc1", "drupal");
   // Check connection
   if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
