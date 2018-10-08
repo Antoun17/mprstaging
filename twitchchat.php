@@ -44,42 +44,15 @@
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-          <a href="#menu-toggle" class="float">
-            <i class="my-float">
-              <h2>Live Chat</h2>
-            </i>
-              </a>
-     <style>
-     .h2 {
- padding-bottom: 10px;
-}
 
+            <div class="container-fluid">
 
-body{
- font-family:Arial;
-
- font-size:18px;
- background-color:#CCC;
-}
-
-.float{
- position:fixed;
- width:200px;
- height:70px;
- bottom:40px;
- right:40px;
- background-color:#0C9;
- color:#FFF;
- border-radius:50px;
- text-align:center;
- box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
- margin-top:22px;
- padding-bottom: 10px;
-}
-     </style>
+              <a href="#menu-toggle" class="float" id="menu-toggle">
+                <i class="my-float">
+                  <h2>Live Chat</h2>
+                </i>
+                  </a>
+            </div>
         <!-- /#page-content-wrapper -->
 
     </div>
