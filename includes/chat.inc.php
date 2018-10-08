@@ -10,7 +10,7 @@
 
         <title>Twitch Chat Boostrap</title>
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link href="includes/chat.css" rel="stylesheet">
+        <link href="/includes/chat.css" rel="stylesheet">
         <script src="/node_modules/jquery/dist/jquery.js"></script>
 
     </head>
