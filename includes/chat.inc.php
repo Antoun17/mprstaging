@@ -163,7 +163,7 @@ padding-bottom: 10px;
             }
             //console.log(chat_message);
             // Send the message to the server passing File Url and chat person name & message
-            ajaxCall('includes/messages.php', chat_message);
+            ajaxCall('/includes/messages.php', chat_message);
             // Clear the message input field
             $('.chat_box .input_message').val('');
 
