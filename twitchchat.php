@@ -53,6 +53,38 @@
                 </i>
                   </a>
             </div>
+
+            <style>
+            .h2 {
+padding-bottom: 10px;
+}
+
+
+body{
+font-family:Arial;
+
+font-size:18px;
+background-color:#CCC;
+}
+
+.float{
+position:fixed;
+width:200px;
+height:70px;
+bottom:40px;
+right:40px;
+background-color:#0C9;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+margin-top:22px;
+padding-bottom: 10px;
+}
+            </style>
         <!-- /#page-content-wrapper -->
 
     </div>
