@@ -157,7 +157,7 @@
       <div class="slide" href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png"></div>
       <div class="slide" href="https://statenislandarts.org/" ><img src="assets/mprsponsors/sia.png"></div>
       <div class="slide" href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/flagship.png"></div>
-      <div class="slide" href="http://sibeerco.com/" ><img src="assets/mprsponsors/sibeercompany.png"></div>
+      <div class="slide"><img src="assets/mprsponsors/sibeercompany.png" href="http://sibeerco.com/" ></div>
    </section>
      <h2 class="my-4 text-center text-white container">"This project was funded in part by an NYSCA Encore Grant"</h2>
 </div>
