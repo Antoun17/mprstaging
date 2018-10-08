@@ -27,7 +27,7 @@
 
 
 <?php include("includes/nav.inc.php"); ?>
-<?php include("includes/chat.inc.php"); ?>
+<?php include("chat.inc.php"); ?>
 
 
   <div class="livestream" style="width: 100%; height: 100%;">
