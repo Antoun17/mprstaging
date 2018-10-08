@@ -68,6 +68,7 @@ background-color:#CCC;
 }
 
 .float{
+z-index: 3;
 position:fixed;
 width:200px;
 height:70px;
