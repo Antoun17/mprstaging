@@ -67,16 +67,14 @@
     </nav>
 
 <main class="main-area">
-<?php
-$url = parse_url(getenv("mysql://baac30b8c10ebe:347a5eea@us-cdbr-iron-east-01.cleardb.net/heroku_3550e03eba1161b?reconnect=true"));
-
-$server = $url["us-cdbr-iron-east-01.cleardb.net"];
-$username = $url["baac30b8c10ebe"];
-$password = $url["347a5eea"];
-$db = substr($url["heroku_3550e03eba1161b"], 1);
-
-$conn = mysqli_connect($server, $username, $password, $db);
-  ?>
+  <?php
+    // Create connection
+    $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    ?>
 
 
 
