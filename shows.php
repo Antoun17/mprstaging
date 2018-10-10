@@ -75,7 +75,7 @@ $username = $url["baac30b8c10ebe"];
 $password = $url["347a5eea"];
 $db = substr($url["heroku_3550e03eba1161b"], 1);
 
-$conn = mysqli_connect($server, $username, $password, $db);
+$conn = new mysqli($server, $username, $password, $db);
   ?>
 
 
@@ -90,7 +90,7 @@ $conn = mysqli_connect($server, $username, $password, $db);
               $episode_id_var = ($_GET["episode_id"]);
 
               $sql = "SELECT * FROM `mpr_episode` episodetbl WHERE episodetbl.`episode_id`=$episode_id_var LIMIT 1;";
-              $result = mysqli_query($conn, $sql);
+              $result = $conn->query($sql);
 
 
               foreach ($result as $row): ?>
@@ -117,7 +117,7 @@ $conn = mysqli_connect($server, $username, $password, $db);
             $show_id_var = ($_GET["show_id"]);
 
                 $sql = "SELECT * FROM `mpr_show` showtbl, `mpr_episode` episodetbl WHERE showtbl.`show_status` = 'ACTIVE' and showtbl.`show_id`=episodetbl.`show_id` and showtbl.`show_id`=$show_id_var;";
-                $result2 = mysqli_query($conn, $sql);
+                $result2 = $conn->query($sql);
                 $isfirst = 1;
                 ?>
 
@@ -160,7 +160,7 @@ $conn = mysqli_connect($server, $username, $password, $db);
 <?php
 
             $sql = "SELECT `show_name`, `show_id`, `show_status`, `show_desc`,`show_url`,`show_insta`,`show_facebook`, `show_img` FROM `mpr_show` WHERE `show_status` = 'ACTIVE'";
-            $result = mysqli_query($conn, $sql);
+            $result = $conn->query($sql);
             ?>
 
 
