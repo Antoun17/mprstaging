@@ -2,6 +2,6 @@
     "require": {
         "pusher/pusher-chatkit-server": "^0.5.9",
         "pusher/pusher-php-server": "^3.2",
-         "ext-mysqli": "*"
+         "ext-mysqli": "^7.1"
     }
 }
