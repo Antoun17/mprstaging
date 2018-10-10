@@ -62,6 +62,7 @@ padding-bottom: 10px;
 
 body{
 font-family:Arial;
+color: black;
 
 font-size:18px;
 background-color:#CCC;
