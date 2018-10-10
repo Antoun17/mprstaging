@@ -17,22 +17,22 @@
                       <a class="nav-link text-white" href="/about.php">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/schedule">Schedule</a>
+                    <a class="nav-link text-white" href="/schedule">Schedule</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/shows.php">Shows</a>
+                    <a class="nav-link text-white" href="/shows.php">Shows</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/archive.php">Archive</a>
+                    <a class="nav-link text-white" href="/archive.php">Archive</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/donors">Donors</a>
+                    <a class="nav-link text-white" href="/donors">Donors</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;" href="/support.php">Donate/Sponsor</a>
+                    <a class="nav-link text-white" href="/support.php">Donate/Sponsor</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;" href="/shop.php">Shop</a>
+                    <a class="nav-link text-white"  href="/shop.php">Shop</a>
                   </li>
               </ul>
 
