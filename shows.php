@@ -68,10 +68,10 @@
 
 <main class="main-area">
 <?php
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("mysql://baac30b8c10ebe:347a5eea@us-cdbr-iron-east-01.cleardb.net/heroku_3550e03eba1161b?reconnect=true"));
 
 $server = $url["us-cdbr-iron-east-01.cleardb.net"];
-$username = $url["baac30b8c10eble"];
+$username = $url["baac30b8c10ebe"];
 $password = $url["347a5eea"];
 $db = substr($url["heroku_3550e03eba1161b"], 1);
 
