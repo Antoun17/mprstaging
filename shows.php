@@ -68,7 +68,7 @@
 
 <main class="main-area">
 <?php
-$url = parse_url(getenv("us-cdbr-iron-east-01.cleardb.net"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["us-cdbr-iron-east-01.cleardb.net"];
 $username = $url["baac30b8c10ebe"];
