@@ -71,7 +71,7 @@
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["us-cdbr-iron-east-01.cleardb.net"];
-$username = $url["baac30b8c10ebe"];
+$username = $url["baac30b8c10eble"];
 $password = $url["347a5eea"];
 $db = substr($url["heroku_3550e03eba1161b"], 1);
 
