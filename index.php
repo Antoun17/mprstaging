@@ -190,7 +190,7 @@ h2{
 {
     display: none;
     float: left;
-    height: 100%;
+    height: 25%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
