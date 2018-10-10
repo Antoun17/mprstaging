@@ -14,7 +14,7 @@
             </a>
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                      <a class="nav-link text-white"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/about.php">About</a>
+                      <a class="nav-link text-white" href="/about.php">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42; background: #6F6F70;"href="/schedule">Schedule</a>
