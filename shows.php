@@ -67,12 +67,14 @@
 
 <main class="main-area">
 <?php
-  // Create connection
-  $conn = mysqli_connect("159.203.163.232", "admin", "mprnyc1", "drupal");
-  // Check connection
-  if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-  }
+$url = parse_url(getenv("us-cdbr-iron-east-01.cleardb.net"));
+
+$server = $url["us-cdbr-iron-east-01.cleardb.net"];
+$username = $url["baac30b8c10ebe"];
+$password = $url["347a5eea"];
+$db = substr($url["heroku_3550e03eba1161b"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
   ?>
 
 
