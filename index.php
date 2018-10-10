@@ -89,63 +89,6 @@
 </div>
 
 
-<div class="container gry" style="width: 50%; height: 100%;">
-
-  <h1 class="my-4 text-center text-white">Our Sponsors</h1>
-<center>
-      <div class="row text-center text-lg-left">
-
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://www.makerspace.nyc/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/simakerspace.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://www.flagshipbrewery.nyc/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/flagship.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://statenislandarts.org/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/sia.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://projectivitygroup.org/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/projectivity.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="http://pesochin.video/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/gp-logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://5050store.com/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/5050.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://www.tfeesstraw.com/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/tfees.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="https://www.empressgreen.com/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/expressgreen.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="http://sibeerco.com/" target="_blank" class="d-block mb-4 h-65 w-65">
-            <img class="" src="/sites/default/files/mprsponsors/sibeercompany.png" alt="">
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-</center>
-
 <div class="container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
