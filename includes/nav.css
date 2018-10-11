@@ -1,11 +1,13 @@
 .navimg {
-width: 50%;
-height: 60px;
+width: 60%;
+height: 100%;
 
 }
 
 .navbar {
+background: black;
+}
 
-background: #393939;
-
+.navlink {
+  color: white;
 }
