@@ -21,7 +21,7 @@
 
 <script type="text/javascript">
         function zoom() {
-            document.body.style.zoom = "80%"
+            document.body.style.zoom = "100%"
         }
 </script>
 
