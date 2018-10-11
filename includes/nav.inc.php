@@ -9,7 +9,7 @@
           </button>
           <div id="navbarNavDropdown" class="navbar-collapse collapse">
             <a class="navbar-brand" href="/">
-              <img class="mr-auto"src="assets/Navbarlogo.png" width="85px" height="80px">
+              <img class="navimg mr-auto"src="assets/Navbarlogo.png" width="85px" height="80px">
             </a>
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
