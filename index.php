@@ -19,7 +19,7 @@
 
 </head>
 
-<body style="background: #393939;">
+<body style="background: #393939; zoom: 80%;">
 
 
 <?php include("includes/nav.inc.php"); ?>
