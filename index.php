@@ -8,7 +8,7 @@
 <meta property="og:image"content="/sites/default/files/mprshows/mprlogo.png" />
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
 <script src="node_modules/jquery/dist/jquery.js"></script>
 
 <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
