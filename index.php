@@ -91,7 +91,7 @@
 </div>
 
 
-<div class="container">
+<div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
       <div class="slide" href="https://www.makerspace.nyc/" ><img src="assets/mprsponsors/simakerspace.png"></div>
