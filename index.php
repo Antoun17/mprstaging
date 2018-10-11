@@ -17,22 +17,16 @@
 
 <link rel="stylesheet" href="includes/frontpg.css">
 
-<style media="screen">
-
-@viewport {
-    width: 980px;
-    min-zoom: 50%;
-    max-zoom: 80%;
-    orientation: landscape;
-}
-
-
-
-</style>
-
 </head>
 
-<body style="background: #393939; zoom: 80%;">
+<script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "300%"
+        }
+</script>
+
+
+<body onload="zoom()" style="background: #393939;" >
 
 
 <?php include("includes/nav.inc.php"); ?>
