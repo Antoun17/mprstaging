@@ -15,7 +15,13 @@ zoom: 60%;
 }
 
 .sponsorslider{
+  border-radius: 25px;
   background-color: #3a3a3a;
+}
+
+
+.gcalendar{
+  padding-bottom: 50px;
 }
 
 .wbackground {
