@@ -20,7 +20,7 @@
 </head>
 
 
-<body onload="zoom()" style="background: #393939;" >
+<body onload="zoom()" style="background: #161616;" >
 
 
 <?php include("includes/nav.inc.php"); ?>
