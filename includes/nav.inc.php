@@ -13,25 +13,25 @@
             </a>
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="/about.php">About</a>
+                      <a class="nav-link" href="/about.php">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="/schedule">Schedule</a>
+                    <a class="nav-link" href="/schedule">Schedule</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="/shows.php">Shows</a>
+                    <a class="nav-link" href="/shows.php">Shows</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="/archive.php">Archive</a>
+                    <a class="nav-link" href="/archive.php">Archive</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="/donors">Donors</a>
+                    <a class="nav-link" href="/donors">Donors</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="/support.php">Donate/Sponsor</a>
+                    <a class="nav-link" href="/support.php">Donate/Sponsor</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white"  href="/shop.php">Shop</a>
+                    <a class="nav-link"  href="/shop.php">Shop</a>
                   </li>
               </ul>
 
