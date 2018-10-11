@@ -118,9 +118,6 @@
 
              <div class="card">
                <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
-                 <figure class="thumbnail">
-                 <img src="<?php echo $row['show_img']; ?>" alt="meow">
-                 </figure>
                  <div class="card-content">
                    <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
                    <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
