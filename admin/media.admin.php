@@ -43,6 +43,11 @@ if (!$nconn) {
 $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id LIMIT 10";
 $result = mysqli_query($nconn, $sqlep); ?>
 
+<?php $vidsrc = mysqli_real_escape_string($nconn, $_REQUEST['vidsrc']); ?>
+
+<?php $media_url = $vidsrc; ?>
+
+
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
   <label>Show Name</label>
   <select name="vidsrc">
