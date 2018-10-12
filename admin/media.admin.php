@@ -40,27 +40,26 @@ $nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "3
 if (!$nconn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id LIMIT";
+$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id LIMIT 10";
 $result = mysqli_query($nconn, $sqlep); ?>
 
-<?php $vidsrc = mysqli_real_escape_string($nconn, $_REQUEST['vidsrc']); ?>
-
-<?php $media_url = $vidsrc; ?>
-
+<?php foreach ($result as $row): ?>
+<?php  $media_url = $row["media_url"]; ?>
+<?php endforeach; ?>
 
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
   <label>Show Name</label>
   <select name="vidsrc">
   <?php foreach ($result as $row):?>
-  <option value="<?php echo $medua_url = $row['media_url'];?>"</option>
+  <option value="<?php echo $row['media_url'];?>"</option>
   <?php endforeach;?>
   </select>
 </div>
 
+
 <?php mysqli_close($conn); ?>
 
 <video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url; ?>" controls>
-
 
 
 
