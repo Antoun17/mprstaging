@@ -29,6 +29,7 @@
 
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
 
+
   <h1>Media Assign Form</h1>
 
 <?php
@@ -39,7 +40,7 @@ if (!$nconn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 $vidsrc = mysqli_real_escape_string($nconn, $_POST['$vidsrc']);
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id;"
+$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id";
 
 $result = mysqli_query($nconn, $sqlep); ?>
 
