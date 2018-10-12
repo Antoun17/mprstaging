@@ -89,7 +89,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
      <label>Show Name</label>
      <select name="task">
      <?php foreach ($result as $row):?>
-     <option value="<?php echo $row['media_full_url'];?>"</option>
+     <option value="<?php echo $row['show_name'];?>"</option>
      <?php endforeach;?>
      </select>
    </div>
