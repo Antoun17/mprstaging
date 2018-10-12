@@ -24,6 +24,9 @@
 </head>
 <body>
 
+  <?php include("includes/nav.inc.php"); ?>
+
+
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
 
 <form action="mediaconfig.php" method="post">
