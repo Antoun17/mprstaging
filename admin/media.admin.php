@@ -53,7 +53,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
   <label>Show Name</label>
   <select name="vidsrc">
   <?php foreach ($result as $row):?>
-  <option value="<?php echo . $media_url;?>"</option>
+  <option value="<?php echo $media_url;?>"</option>
   <?php endforeach;?>
   </select>
 </div>
