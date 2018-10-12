@@ -29,8 +29,6 @@
 
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
 
-<form action="mediaconfig.php" method="post">
-
   <h1>Media Assign Form</h1>
 
 <?php
@@ -54,6 +52,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
   <?php endforeach;?>
   </select>
 </div>
+</form>
 
 <?php foreach ($result as $row): ?>
 <?php  $media_url = $row["media_url"]; ?>
