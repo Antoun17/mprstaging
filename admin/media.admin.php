@@ -42,6 +42,7 @@ if (!$nconn) {
 $vidsrc = mysqli_real_escape_string($nconn, $_POST['$vidsrc']);
 $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id";
 
+
 $result = mysqli_query($nconn, $sqlep); ?>
 
 <form action="/includes/test.php" method="POST">
@@ -72,7 +73,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT `show_name`, `show_id` FROM `mpr_show`";
+    $sql = "SELECT `media_url`, FROM `mpr_media`";
 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
