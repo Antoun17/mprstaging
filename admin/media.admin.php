@@ -54,7 +54,7 @@ mysqli_close($conn);
 
   <?php
     // Create connection
-    $conn = mysqli_connect("localhost", "admin", "mprnyc1", "drupal");
+    $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
     // Check connection
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
