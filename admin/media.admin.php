@@ -40,7 +40,7 @@ $nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "3
 if (!$nconn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id LIMIT 1";
+$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' ORDER BY media_id LIMIT 10";
 $result = mysqli_query($nconn, $sqlep);
 
 foreach ($result as $row):
@@ -52,6 +52,17 @@ mysqli_close($conn);
 ?>
 
 <video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url; ?>" controls>
+
+  <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
+    <label>Show Name</label>
+    <select name="vidsrc">
+    <?php foreach ($result as $row):?>
+    <option value="<?php echo $row['media_url'];?>"</option>
+    <?php endforeach;?>
+    </select>
+  </div>
+
+
   <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
   </video>
 
@@ -69,7 +80,7 @@ mysqli_close($conn);
     mysqli_close($conn);
     ?>
 
-  <form action="mediaconfig.php" method="post">
+  <form action="/includes/meconfig.inc.php" method="post">
 
     <div class="form-group w-50 p-3" style="background-color: #eee; padding-top: 20px; padding-bottom: 40px;" >
       <label>Episode Date</label>
