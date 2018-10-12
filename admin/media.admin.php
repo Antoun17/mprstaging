@@ -44,22 +44,20 @@ $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video
 
 $result = mysqli_query($nconn, $sqlep); ?>
 
+<?php foreach ($result as $row): ?>
+<?php  $media_url = $row["media_url"]; ?>
+<?php endforeach; ?>
+
 <form action="/includes/test.php" method="POST">
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
   <label>Show Name</label>
   <select name="vidsrc">
   <?php foreach ($result as $row):?>
-  <option value="<?php echo $row['media_url'];?>"</option>
+  <option value="<?php echo . $media_url;?>"</option>
   <?php endforeach;?>
   </select>
 </div>
 </form>
-
-<?php foreach ($result as $row): ?>
-<?php  $media_url = $row["media_url"]; ?>
-<?php endforeach; ?>
-
-
 
 <?php mysqli_close($conn); ?>
 
