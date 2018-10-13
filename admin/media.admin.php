@@ -62,7 +62,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
 
 <script>
 function setVideoSource() {
- var theSelect = document.getElementById('location');
+ var theSelect = document.getElementById('task');
  var theVideo = document.getElementById('myVideo');
  var theUrl;
 
