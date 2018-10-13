@@ -89,7 +89,7 @@ function setVideoSource() {
     mysqli_close($conn);
     ?>
 
-  <form action="/includes/meconfig.inc.php" method="post">
+  <form action="/includes/mconfig.inc.php" method="post">
 
     <div class="form-group w-50 p-3" style="background-color: #eee; padding-top: 20px; padding-bottom: 40px;" >
       <label>Episode Date</label>
