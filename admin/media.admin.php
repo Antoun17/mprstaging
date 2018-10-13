@@ -39,8 +39,7 @@ $nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "3
 if (!$nconn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$vidsrc = mysqli_real_escape_string($nconn, $_POST['$vidsrc']);
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video'";
+$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 10";
 
 
 $result = mysqli_query($nconn, $sqlep); ?>
