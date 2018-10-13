@@ -41,8 +41,11 @@ if (!$nconn) {
 }
 $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 10";
 
+$random = rand(0,10000);
 
 $result = mysqli_query($nconn, $sqlep); ?>
+
+<?php echo $random; ?>
 
 <form id="form1" method="post">
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
