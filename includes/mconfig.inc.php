@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("localhost", "admin", "mprnyc1", "drupal");
+$link = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
 
 
 if($link === false){
@@ -40,27 +40,15 @@ mysqli_close($link);
 
 <?php
 
-$ulink = mysqli_connect("localhost", "admin", "mprnyc1", "drupal");
+$sql = "UPDATE inventory t1, distribution t2 SET t1.status = t2.status WHERE t1.serial_number = t2.serial_number";
 
-$select = "SELECT `episode_id` FROM `mpr_episode` LIMIT 1";
-
-
-if($ulink === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-
-$usql = "UPDATE `mpr_media` SET episode_id='$episode_id'";
-
-if(mysqli_query($ulink, $usql)){
-    echo "Records updated successfully.";
+if(mysqli_query($link, $sql)){
+    echo "Updated Inventory.";
 } else{
-    echo "ERROR: Could not execute $usql. " . mysqli_error($link);
+    echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 }
 
-// close connection
-mysqli_close($ulink);
-
-
+mysqli_close($link);
 
  ?>
 
