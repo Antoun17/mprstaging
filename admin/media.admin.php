@@ -54,11 +54,10 @@ $result = mysqli_query($nconn, $sqlep); ?>
   </select>
 </div>
 
-<?php $test = $media_url; ?>
 
 <?php mysqli_close($conn); ?>
 
-<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url; ?>" controls>
+<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url = $_POST['media_url'];; ?>" controls>
 
 
 
