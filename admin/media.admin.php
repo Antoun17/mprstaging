@@ -50,7 +50,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
   <label>Show Name</label>
   <select name="task" id="task" onchange="setVideoSource()">
   <?php foreach ($result as $row):?>
-  <option><?php echo $test = $row['media_url'];?></option>
+  <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
   <?php endforeach;?>
   </select>
 </div>
