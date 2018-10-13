@@ -33,15 +33,6 @@ if(mysqli_query($link, $sql)){
 } else{
     echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 }
-
-$sql1 = "UPDATE mpr_media SET media_id = $random";
-
-if(mysqli_query($link, $sql1)){
-  echo "Updated successfully"
-} else {
-  echo "ERROR: Could not execute $sql1. " . mysqli_error($link);
-}
-
 // close connection
 mysqli_close($link);
 ?>
