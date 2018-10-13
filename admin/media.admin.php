@@ -57,7 +57,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
 </form>
 
 
-<video id="myVideo" width="100%" src="#"><controls></video>
+<video id="myVideo" width="100%" src="#" controls></video>
 
 
 <script>
