@@ -73,7 +73,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT `media_title` FROM `mpr_media`";
+    $sql = "SELECT `show_name` FROM `mpr_show`";
 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
@@ -90,7 +90,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
      <label>Show Name</label>
      <select name="task">
      <?php foreach ($result as $row):?>
-     <option><?php echo $row['media_title'];?></option>
+     <option><?php echo $row['show_name'];?></option>
      <?php endforeach;?>
      </select>
    </div>
