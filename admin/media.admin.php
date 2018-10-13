@@ -24,7 +24,7 @@
 </head>
 <body>
 
-  <?php include("includes/nav.inc.php"); ?>
+  <?php include("nav.inc.php"); ?>
 
 
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
@@ -39,13 +39,10 @@ $nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "3
 if (!$nconn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 10";
+$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 5";
 
-$random = rand(0,10000);
 
 $result = mysqli_query($nconn, $sqlep); ?>
-
-<?php echo $random; ?>
 
 <form id="form1" method="post">
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
