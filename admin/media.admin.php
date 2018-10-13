@@ -49,14 +49,16 @@ $result = mysqli_query($nconn, $sqlep); ?>
   <label>Show Name</label>
   <select name="task">
   <?php foreach ($result as $row):?>
-  <option><?php echo $media_url = $row['media_url'];?></option>
+  <option><?php echo $test = $row['media_url'];?></option>
   <?php endforeach;?>
   </select>
 </div>
 
+<?php $test = $media_url ?>
+
 <?php mysqli_close($conn); ?>
 
-<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/"?> <?php . $media_url; ?>" controls>
+<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url; ?>" controls>
 
 
 
