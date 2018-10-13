@@ -73,7 +73,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT `show_name` FROM `mpr_show`";
+    $sql = "SELECT `media_id` FROM `mpr_media`";
 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
