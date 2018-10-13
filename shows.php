@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <title>Archive (Under Construction)</title>
+  <head>
+
 
     <meta charset="utf-8">
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
@@ -9,116 +11,164 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
-    <title>Shows Page</title>
-</head>
-
-<body>
-
-  <?php include("includes/nav.inc.php"); ?>
-  <?php include("chat.inc.php"); ?>
-
-<main class="main-area">
-  <?php
-    // Create connection
-    $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    ?>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 
-
-          <div class="centered">
-
-
-  
+  </head>
+  <body>
 
 
-<?php
-            if (isset($_GET["show_id"])) {
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
 
-            $show_id_var = ($_GET["show_id"]);
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+              <a class="navbar-brand" href="/">
+                <img class=" navbar-header mr-auto"src="/sites/default/files/Navbarlogo.png" width="85px" height="80px">
+              </a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/shows.php">Shows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/supportmpr">Donate/Sponsor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/shop">Shop</a>
+                    </li>
+                </ul>
 
-                $sql = "SELECT * FROM `mpr_show` showtbl, `mpr_episode` episodetbl WHERE showtbl.`show_status` = 'ACTIVE' and showtbl.`show_id`=episodetbl.`show_id` and showtbl.`show_id`=$show_id_var;";
-                $result2 = query($conn, $sql);
-                $isfirst = 1;
-                ?>
+                <ul class="nav navbar-nav navbar-right">
+              <li style="padding-right: 10px;"><a href="/user/login">Login</a></li>
+
+              <li><a href="/user/logout">Logout</a></li>
+                </ul>
+
+                <style>
+                .navbar-header {
+                  width: 60%;
+                  height: auto;
+                }
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+                </style>
+            </div>
+        </nav>
+
+        <?php
+          // Create connection
+          $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+          // Check connection
+          if (!$conn) {
+              die("Connection failed: " . mysqli_connect_error());
+          }
+          ?>
 
 
+          <?php
 
-                 <?php foreach ($result2 as $row):
-                   if($isfirst==1) {
-                     echo "<P><h2>";
-                     echo $row['show_name'];
-                     echo "</h2><br>";
-                     echo "<P>";
-                    $isfirst = 0;?>
-                    <center> <img src="<?php echo $row['show_img']; ?>" alt="meow" style="width: 45%;"></center><P><h2>Episodes</h2><P>
-                                <section class="cards">
-                    <?php
-                   }
-?>
-                 <div class="card">
-                 <figure class="thumbnail">
-                 <img src="<?php echo $row['show_img']; ?>" alt="meow">
-                 </figure>
-                     <div class="card-content">
-                       <h2> <a href="shows.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_title']; ?></a> - <?php echo $row['episode_date']; ?>
-                       <p class="card-text collapse" id="viewdetails<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_description']; ?></p>
-                       <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['episode_id']; ?>">Show Info</a> </p>
-                     <!-- .card-content -->
-                 </div>
-</div>
+          if(isset($_GET["episode_id"])) {
 
-                 <!-- .card -->
-               <?php endforeach;
+            $episode_id_var = ($_GET["episode_id"]);
 
-
-
-            }
-              ?>
-              </section>
-		            <section class="cards">
-
-<?php
-
-            $sql = "SELECT `show_name`, `show_id`, `show_status`, `show_desc`,`show_url`,`show_insta`,`show_facebook`, `show_img` FROM `mpr_show` WHERE `show_status` = 'ACTIVE'";
+            $sql = "SELECT * FROM `mpr_episode` episodetbl WHERE episodetbl.`episode_id`=$episode_id_var LIMIT 1;";
             $result = mysqli_query($conn, $sql);
-            ?>
+
+
+            foreach ($result as $row): ?>
+            <h2>
+            <?php echo $row['episode_title']; ?>
+             -
+             <?php echo $row['episode_date']; ?>
+            </h2>
+              <div class="container-fluid livestream" style="width: 100%; height: 100%;">
+              <div class="container-fluid embed-responsive embed-responsive-16by9">
+              <iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/videos/<?php echo $row['episode_url']; ?>/player?enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div></div>
+<?php
+               $show_id = $row['show_id'];
+            endforeach;
+
+              }
+              ?>
+
+            <?php
+
+            $sql = "SELECT `show_name`, `show_id`, `show_status`, `show_desc`,`show_url`,`show_insta`,`show_facebook`, `show_img` FROM `mpr_show` WHERE `show_status` = 'ACTIVE' ORDER BY `show_name` ASC";
+            $result = mysqli_query($conn, $sql); ?>
+
+            <?php foreach ($result as $row): ?>
+
+              <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="myList" role="tablist">
+              <ul>
+                  <li><a class="list-group-item list-group-item-action"  href="#<?php echo $row['show_id']; ?>" role="tab"> <?php echo $row['show_name']; ?></a></li>
+              </ul>
+              </div>
+            </div>
 
 
 
-             <?php foreach ($result as $row):?>
+                    <?php
 
-             <div class="card">
-               <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
-                 <div class="card-content">
-                   <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
-                   <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                   <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
-                 <!-- .card-content -->
-               </a>
-             </div>
-             </div>
-             <!-- .card -->
-           <?php endforeach;
-
-                         mysqli_close($conn);
-           ?>
+              $sql = "SELECT `show_name`, `show_id`, `show_status`, `show_desc`,`show_url`,`show_insta`,`show_facebook`, `show_img` FROM `mpr_show` WHERE `show_status` = 'ACTIVE'";
+              $result = mysqli_query($conn, $sql);
+              ?>
 
 
-              <!-- .card -->
 
-            </section>
-            <!-- .cards -->
+               <?php foreach ($result as $row):?>
 
-          </div>
-    <!-- .centered -->
-  </main>
-  </body>
 
-    </html>
+                     <div class="tab-content">
+                       <div class="tab-pane fade" id="<?php echo $row['show_id']; ?>">
+
+                         <div class="col-md-3" style="height: 200px; width: 200px;">
+                           <div class="card card-inverse card-success text-center">
+                             <img class="card-img-top" src="<?php echo $row['show_img']; ?>" alt="Card image cap">
+                             <div class="card-block">
+                               <h4 class="card-title"><?php echo $row['episode_title'];?></h4>
+                               <p class="card-text"><?php echo $row['episode_description']; ?></p>
+                               <a href="archive.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>" class="btn btn-primary">Learn More</a>
+                             </div>
+                           </div>
+                         </div>
+
+                        </div>
+                     </div>
+               </div>
+
+
+
+               <!-- .card -->
+             <?php endforeach;?>
+
+          <?php endforeach;
+
+mysqli_close($conn);
+
+          ?>
+
+
+          <script>
+          $('#myList a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+
+            $('#myList a[href="#<?php echo $row['show_id']; ?>"]').tab('show') // Select tab by name
+
+
+          })
+          </script>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
