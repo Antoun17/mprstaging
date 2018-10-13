@@ -70,7 +70,7 @@ function setVideoSource() {
 
 <?php mysqli_close($conn); ?>
 
-<video id="myVideo" width="100%" src="http://d1uox2u1zwzv0e.cloudfront.net/"><controls>
+<video id="myVideo" width="100%" src="#"><controls>
 
 
 
