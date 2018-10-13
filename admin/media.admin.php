@@ -46,7 +46,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
 
 <form id="form1" method="post">
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
-  <label>Show Name</label>
+  <label>Video Select</label>
   <select name="task" id="task" onchange="setVideoSource()">
   <?php foreach ($result as $row):?>
   <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
