@@ -49,11 +49,10 @@ $result = mysqli_query($nconn, $sqlep); ?>
   <label>Show Name</label>
   <select name="task">
   <?php foreach ($result as $row):?>
-  <option><?php echo $row['media_url'];?></option>
+  <option><?php echo $media_url = $row['media_url'];?></option>
   <?php endforeach;?>
   </select>
 </div>
-
 
 <?php mysqli_close($conn); ?>
 
