@@ -47,9 +47,9 @@ $result = mysqli_query($nconn, $sqlep); ?>
 
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
   <label>Show Name</label>
-  <select name="task">
+  <select name="task" id="task">
   <?php foreach ($result as $row):?>
-  <option><?php echo $test = $row['media_url'];?></option>
+  <option value="<?php echo $test = $row['media_url'];?>"><?php echo $test = $row['media_url'];?></option>
   <?php endforeach;?>
   </select>
 </div>
@@ -57,8 +57,20 @@ $result = mysqli_query($nconn, $sqlep); ?>
 
 <?php mysqli_close($conn); ?>
 
+
 <video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url = $_POST['media_url'];; ?>" controls>
 
+<script>
+    function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        onChange: function(value) {
+          ifrm.setAttribute("src", 'http://d1uox2u1zwzv0e.cloudfront.net/' + value;);
+          ifrm.style.width = "640px";
+          ifrm.style.height = "480px";
+          document.body.appendChild(ifrm);
+        }
+    }
+</script>
 
 
   <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
