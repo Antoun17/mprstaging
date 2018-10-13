@@ -56,7 +56,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
 
 <?php mysqli_close($conn); ?>
 
-<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url; ?>" controls>
+<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/"?> <?php . $media_url; ?>" controls>
 
 
 
