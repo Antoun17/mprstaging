@@ -45,32 +45,34 @@ $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video
 
 $result = mysqli_query($nconn, $sqlep); ?>
 
+<form id="form1" method="post">
 <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
   <label>Show Name</label>
-  <select name="task" id="task">
+  <select name="task" id="task" onchange="setVideoSource()">
   <?php foreach ($result as $row):?>
-  <option value="<?php echo $test = $row['media_url'];?>"><?php echo $test = $row['media_url'];?></option>
+  <option><?php echo $test = $row['media_url'];?></option>
   <?php endforeach;?>
   </select>
 </div>
+</form>
+
+<script>
+function setVideoSource() {
+ var theSelect = document.getElementById('location');
+ var theVideo = document.getElementById('myVideo');
+ var theUrl;
+
+ theUrl = theSelect.options[theSelect.selectedIndex].value;
+ theVideo.src = theUrl;
+}
+</script>
 
 
 <?php mysqli_close($conn); ?>
 
+<video id="myVideo" width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url = $_POST['media_url'];; ?>" controls>
 
-<video width="100%" src="<?php echo "http://d1uox2u1zwzv0e.cloudfront.net/" . $media_url = $_POST['media_url'];; ?>" controls>
 
-<script>
-    function prepareFrame() {
-        var ifrm = document.createElement("iframe");
-        onChange: function(value) {
-          ifrm.setAttribute("src", 'http://d1uox2u1zwzv0e.cloudfront.net/' + value;);
-          ifrm.style.width = "640px";
-          ifrm.style.height = "480px";
-          document.body.appendChild(ifrm);
-        }
-    }
-</script>
 
 
   <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
