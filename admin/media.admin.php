@@ -56,6 +56,10 @@ $result = mysqli_query($nconn, $sqlep); ?>
 </div>
 </form>
 
+
+<video id="myVideo" width="100%" src="#"><controls></video>
+
+
 <script>
 function setVideoSource() {
  var theSelect = document.getElementById('location');
@@ -70,13 +74,7 @@ function setVideoSource() {
 
 <?php mysqli_close($conn); ?>
 
-<video id="myVideo" width="100%" src="#"><controls>
 
-
-
-
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
-  </video>
 
   <?php
     // Create connection
