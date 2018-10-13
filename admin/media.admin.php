@@ -54,7 +54,7 @@ $result = mysqli_query($nconn, $sqlep); ?>
   </select>
 </div>
 
-<?php $test = $media_url ?>
+<?php $test = $media_url; ?>
 
 <?php mysqli_close($conn); ?>
 
