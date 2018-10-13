@@ -83,7 +83,7 @@ function setVideoSource() {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT `media_url` FROM `mpr_media`";
+  $sql = "SELECT `show_name`, `show_id` FROM `mpr_show`";
 
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
@@ -96,14 +96,14 @@ function setVideoSource() {
       <input type="date" class="form-control" name="episode_date">
 
 
-   <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
-     <label>Show Name</label>
-     <select name="task">
-     <?php foreach ($result as $row):?>
-     <option><?php echo $row['media_url'];?></option>
-     <?php endforeach;?>
-     </select>
-   </div>
+      <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
+        <label>Show Name</label>
+        <select name="task">
+        <?php foreach ($result as $row):?>
+        <option value="<?php echo $row['show_id'] . "|" . $row['show_name'];?>"><?php echo $row['show_name'];?></option>
+        <?php endforeach;?>
+        </select>
+      </div>
 
   <div class="form-group w-50 p-3"style="background-color: #eee;">
     <label>Episode Title</label>
