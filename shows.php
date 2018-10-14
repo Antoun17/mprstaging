@@ -77,10 +77,12 @@
 
                  <?php foreach ($result2 as $row):
                    if($isfirst==1) {
+                     echo "<center>"
                      echo "<P><h2>";
-                    echo '<center>' echo $row['show_name']; '</center>';
+                     echo $row['show_name'];
                      echo "</h2><br>";
                      echo "<P>";
+                     echo "</center>";
                     $isfirst = 0;?>
                     <h2>Episodes</h2>
                                 <section class="cards">
