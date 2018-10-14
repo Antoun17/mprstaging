@@ -11,17 +11,13 @@
 
 <body>
 
-
-  <?php include("/includes/nav.inc.php"); ?>
-
-
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
 
 
   <h1>Media Assign Form</h1>
 
 
-  <form action="/includes/mconfig.inc.php" method="post">
+  <form action="/includes/lstream.admin.php" method="post">
 
 
     <?php
@@ -67,7 +63,7 @@
     </script>
 
     <div class="form-group w-25 p-3"style="background-color: #eee;">
-      <select name="showstatusdropdown">
+      <select name="livestreamstatus">
       <option value="LIVE">LIVE</option>
       <option value="RESTREAM">RESTREAM</option>
     </select>
