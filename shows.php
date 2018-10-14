@@ -103,7 +103,7 @@
 
             }
               ?>
-              <h2>Shows</h2>
+               <center> <h2>More Shows</h2> </center>
 
               </section>
 		            <section class="cards">
