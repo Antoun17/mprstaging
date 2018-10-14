@@ -94,7 +94,7 @@
                        <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['episode_id']; ?>">Show Info</a> </p>
                      <!-- .card-content -->
                  </div>
-</div>
+                    </div>
 
                  <!-- .card -->
                <?php endforeach;
@@ -103,6 +103,8 @@
 
             }
               ?>
+              <h2>Shows</h2>
+
               </section>
 		            <section class="cards">
 
