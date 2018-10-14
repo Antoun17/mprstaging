@@ -32,19 +32,7 @@
 
   <h1>Media Assign Form</h1>
 
-<?php
 
-$nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
-
-if (!$nconn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-$sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 10";
-
-
-$result = mysqli_query($nconn, $sqlep); ?>
-
-<?php mysqli_close($conn); ?>
 
 
 
@@ -63,6 +51,21 @@ $result = mysqli_query($nconn, $sqlep); ?>
     ?>
 
   <form action="/includes/mconfig.inc.php" method="post">
+
+    <?php
+
+    $nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+
+    if (!$nconn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video' LIMIT 10";
+
+
+    $result = mysqli_query($nconn, $sqlep); ?>
+
+    <?php mysqli_close($conn); ?>
+
 
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
