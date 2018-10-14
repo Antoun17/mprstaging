@@ -16,7 +16,8 @@
 <body>
 
 
-  <?php include("chat.inc.php"); ?>
+  <?php include("includes/nav.inc.php"); ?>
+
 
 
 <main class="main-area">
