@@ -34,7 +34,7 @@
       die("Connection failed: " . mysqli_connect_error());
   }
 
-$sql = "SELECT MAX(`live_id`), `live_url`, FROM `mpr_live`";
+$sql = "SELECT `live_url`, FROM `mpr_live`";
 
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
