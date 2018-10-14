@@ -45,7 +45,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <?php endforeach;?>
 
   <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
 
 
 <div class="container">
