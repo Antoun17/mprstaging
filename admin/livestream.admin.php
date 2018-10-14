@@ -42,9 +42,11 @@
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
-      <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVESTREAM</option>
+
+      <option> <?php echo "'https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false'>LIVESTREAM</option>" ?>
+
       <?php foreach ($result as $row):?>
-      <option><?php echo $row['episode_url'];?></option>
+      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'] . '/player?width=900&height=900&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';?></option>
       <?php endforeach;?>
       </select>
     </div>
@@ -60,7 +62,7 @@
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
-     theVideo.src = 'https://livestream.com/accounts/25937168/events/7713617/videos/' + theUrl + '/player?width=900&height=900&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';
+     theVideo.src = theUrl;
     }
     </script>
 
