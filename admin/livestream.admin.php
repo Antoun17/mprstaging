@@ -48,8 +48,8 @@
       </select>
     </div>
 <?php
-    if(isset($_GET["episodeurl"])){
-        $draft= $_GET["episodeurl"];
+    if(isset($_POST["episodeurl"])){
+        $draft= $_POST["episodeurl"];
         echo $draft;
     }
 ?>
