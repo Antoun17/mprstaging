@@ -43,11 +43,10 @@
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'];?></option>
+      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'] . '/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';?></option>
       <?php endforeach;?>
       </select>
     </div>
-
 
 
 
