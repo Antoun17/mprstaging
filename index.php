@@ -26,6 +26,20 @@
 <?php include("includes/nav.inc.php"); ?>
 <?php include("chat.inc.php"); ?>
 
+<?php
+
+$nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+
+if (!$nconn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$sqlep = "SELECT MAX(live_id) FROM `mpr_live` LIMIT 1";
+
+$live_url = $_GET('live_url');
+
+$result = mysqli_query($nconn, $sqlep); ?>
+
+<?php mysqli_close($conn); ?>
 
 
   <div class="livestream" style="width: 100%; height: 100%;">

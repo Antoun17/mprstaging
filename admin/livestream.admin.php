@@ -51,13 +51,13 @@
 
 
 
-    <video id="myVideo" width="100%" src="#" controls></video>
 
+    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="#"></iframe>
 
     <script>
-    function setVideoSource() {
+    function setStreamSource() {
      var theSelect = document.getElementById('episodeurl');
-     var theVideo = document.getElementById('myVideo');
+     var theVideo = document.getElementById('myStream');
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
