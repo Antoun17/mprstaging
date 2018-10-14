@@ -129,7 +129,7 @@
 
 </form>
 
-<form class="" action="includes/msync.admin.php" method="post">
+<form class="" action="/includes/msync.admin.php" method="post">
   <div class="submitbuttons" style="padding-top: 30px;">
     <button type="submit" class="btn btn-primary">Sync</button>
   </div>
