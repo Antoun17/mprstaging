@@ -52,7 +52,7 @@
 
 
 
-    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="#"></iframe>
+    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
 
     <script>
     function setStreamSource() {
