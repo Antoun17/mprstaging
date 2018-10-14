@@ -51,8 +51,8 @@
 
 
     <div class="livestream">
-    <iframe style="width: 900px;; height: 900px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
-  </div>
+    <iframe style="width: 845px;; height: 550px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
+    </div>
     <script>
     function setStreamSource() {
      var theSelect = document.getElementById('episodeurl');
