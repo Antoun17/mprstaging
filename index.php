@@ -35,7 +35,6 @@ if (!$nconn) {
 }
 $sqlep = "SELECT MAX(live_id) FROM `mpr_live` LIMIT 1";
 
-$live_url = $_GET('live_url');
 
 $result = mysqli_query($nconn, $sqlep); ?>
 
