@@ -82,15 +82,12 @@
                      echo "</h2><br>";
                      echo "<P>";
                     $isfirst = 0;?>
-                    <center> <img src="<?php echo $row['show_img']; ?>" alt="meow" style="width: 45%;"></center><P><h2>Episodes</h2><P>
+                    <h2>Episodes</h2>
                                 <section class="cards">
                     <?php
                    }
 ?>
                  <div class="card">
-                 <figure class="thumbnail">
-                 <img src="<?php echo $row['show_img']; ?>" alt="meow">
-                 </figure>
                      <div class="card-content">
                        <h2> <a href="shows.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_title']; ?></a> - <?php echo $row['episode_date']; ?>
                        <p class="card-text collapse" id="viewdetails<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_description']; ?></p>
