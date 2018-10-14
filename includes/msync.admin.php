@@ -7,7 +7,7 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$sql = "UPDATE mpr_media t1, mpr_episode t2 SET t1.media_id = t2.episode_id WHERE t1.media_id LIKE t2.episode_url";
+$sql = "UPDATE mpr_media t1, mpr_episode t2 SET t1.media_id = t2.episode_id WHERE t1.media_id = t2.episode_url";
 
 if(mysqli_query($link, $sql)){
     echo "Sync Complete";
