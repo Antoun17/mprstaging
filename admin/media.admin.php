@@ -55,7 +55,7 @@
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setVideoSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
+      <option><?php echo $row['media_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
@@ -73,7 +73,7 @@
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
-     theVideo.src = theUrl;
+     theVideo.src = 'http://d1uox2u1zwzv0e.cloudfront.net/' + theUrl;
     }
     </script>
 
