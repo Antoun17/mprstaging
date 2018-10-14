@@ -44,33 +44,6 @@ $sqlep = "SELECT * FROM `mpr_media` where episode_id = 0 and media_type = 'video
 
 $result = mysqli_query($nconn, $sqlep); ?>
 
-<form id="form1" method="post">
-<div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
-  <label>Video Select</label>
-  <select name="task" id="task" onchange="setVideoSource()">
-  <?php foreach ($result as $row):?>
-  <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
-  <?php endforeach;?>
-  </select>
-</div>
-</form>
-
-
-<video id="myVideo" width="100%" src="#" controls></video>
-
-
-<script>
-function setVideoSource() {
- var theSelect = document.getElementById('task');
- var theVideo = document.getElementById('myVideo');
- var theUrl;
-
- theUrl = theSelect.options[theSelect.selectedIndex].value;
- theVideo.src = theUrl;
-}
-</script>
-
-
 <?php mysqli_close($conn); ?>
 
 
@@ -90,6 +63,30 @@ function setVideoSource() {
     ?>
 
   <form action="/includes/mconfig.inc.php" method="post">
+
+    <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
+      <label>Video Select</label>
+      <select name="episode_url" id="episode_url" onchange="setVideoSource()">
+      <?php foreach ($result as $row):?>
+      <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
+      <?php endforeach;?>
+      </select>
+    </div>
+
+
+    <video id="myVideo" width="100%" src="#" controls></video>
+
+
+    <script>
+    function setVideoSource() {
+     var theSelect = document.getElementById('episode_url');
+     var theVideo = document.getElementById('myVideo');
+     var theUrl;
+
+     theUrl = theSelect.options[theSelect.selectedIndex].value;
+     theVideo.src = theUrl;
+    }
+    </script>
 
     <div class="form-group w-50 p-3" style="background-color: #eee; padding-top: 20px; padding-bottom: 40px;" >
       <label>Episode Date</label>

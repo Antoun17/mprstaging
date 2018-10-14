@@ -14,6 +14,7 @@ $episode_description = mysqli_real_escape_string($link, $_REQUEST['episode_descr
 $show_id = mysqli_real_escape_string($link, $_REQUEST['show_id']);
 $episode_date = mysqli_real_escape_string($link, $_REQUEST['episode_date']);
 $episode_id = mysqli_real_escape_string($link, $_REQUEST['episode_id']);
+$episode_url = mysqli_real_escape_string($link, $_REQUEST['episode_url']):
 $episode_status = mysqli_real_escape_string($link, $_REQUEST['episode_status']);
 
 $episode_status = $_POST['showstatusdropdown'];
@@ -26,7 +27,7 @@ $show_id = $arr[0];
 
 // attempt insert query execution
 
-$sql = "INSERT INTO `mpr_episode` (episode_title, episode_description, show_id, episode_date, episode_id, episode_status) VALUES ('$episode_title', '$episode_description', '$show_id', '$episode_date','$episode_id','$episode_status')";
+$sql = "INSERT INTO `mpr_episode` (episode_title, episode_description, show_id, episode_date, episode_id, episode_url, episode_status) VALUES ('$episode_title', '$episode_description', '$show_id', '$episode_date','$episode_id','$episode_url','$episode_status')";
 
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
