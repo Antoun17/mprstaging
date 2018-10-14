@@ -66,34 +66,18 @@
     }
     </script>
 
-    <?php
-      // Create connection
-      $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
-      // Check connection
-      if (!$conn) {
-          die("Connection failed: " . mysqli_connect_error());
-      }
-
-    $sql = "SELECT `show_name`, `show_id` FROM `mpr_show`";
-
-      $result = mysqli_query($conn, $sql);
-      mysqli_close($conn);
-      ?>
-
-
+    <div class="form-group w-25 p-3"style="background-color: #eee;">
+      <select name="showstatusdropdown">
+      <option value="LIVE">LIVE</option>
+      <option value="RESTREAM">RESTREAM</option>
+    </select>
+    </div>
 
 
 <div class="submitbuttons" style="padding-top: 30px;">
   <button type="submit" class="btn btn-primary">Submit</button>
   <button type="reset" class="btn btn-primary value=Reset">Reset</button>
 </div>
-
-</form>
-
-<form class="" action="/includes/msync.admin.php" method="post">
-  <div class="submitbuttons" style="padding-top: 30px;">
-    <button type="submit" class="btn btn-primary">Sync</button>
-  </div>
 </form>
 
 </div>
