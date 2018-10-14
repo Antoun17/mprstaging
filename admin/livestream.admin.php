@@ -86,6 +86,8 @@
   </select>
   </div>
 
+<?php echo  $_POST['episodeurl']; ?>
+
 <div class="submitbuttons" style="padding-top: 30px;">
   <button type="submit" class="btn btn-primary">Submit</button>
   <button type="reset" class="btn btn-primary value=Reset">Reset</button>
