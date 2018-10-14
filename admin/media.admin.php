@@ -53,7 +53,7 @@
 
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
-      <select name="episode_url" id="episode_url" onchange="setVideoSource()">
+      <select name="episodeurl" id="episodeurl" onchange="setVideoSource()">
       <?php foreach ($result as $row):?>
       <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
       <?php endforeach;?>
@@ -68,7 +68,7 @@
 
     <script>
     function setVideoSource() {
-     var theSelect = document.getElementById('episode_url');
+     var theSelect = document.getElementById('episodeurl');
      var theVideo = document.getElementById('myVideo');
      var theUrl;
 
