@@ -41,7 +41,7 @@
 
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
-      <select name="episodeurl" id="episodeurl" onchange="setVideoSource()">
+      <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
       <?php foreach ($result as $row):?>
       <option><?php echo $row['episode_url'];?></option>
       <?php endforeach;?>
