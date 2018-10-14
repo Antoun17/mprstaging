@@ -43,7 +43,7 @@
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo $live_url = $row['episode_url'];?></option>
+      <option><?php echo $row['episode_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
