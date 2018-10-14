@@ -48,6 +48,15 @@
       </select>
     </div>
 
+    <div class="form-group w-25 p-3"style="background-color: #eee;">
+      <select name="live_url">
+      <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
+      <option value="<?php $_POST['episodeurl']; ?>">RESTREAM</option>
+    </select>
+    </div>
+
+  <?php echo  $_POST['episodeurl']; ?>
+
 
 
     <div class="livestream">
@@ -79,14 +88,7 @@
       ?>
 
 
-  <div class="form-group w-25 p-3"style="background-color: #eee;">
-    <select name="live_url">
-    <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
-    <option value="<?php $_POST['episodeurl']; ?>">RESTREAM</option>
-  </select>
-  </div>
 
-<?php echo  $_POST['episodeurl']; ?>
 
 <div class="submitbuttons" style="padding-top: 30px;">
   <button type="submit" class="btn btn-primary">Submit</button>
