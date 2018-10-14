@@ -93,6 +93,13 @@
         </select>
       </div>
 
+      <?php
+          if(isset($_POST["task"])){
+              $draft= $_POST["task"];
+              echo $draft;
+          }
+      ?>
+
   <div class="form-group w-50 p-3"style="background-color: #eee;">
     <label>Episode Title</label>
     <input type="text" name="episode_title">
