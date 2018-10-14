@@ -34,20 +34,17 @@
       die("Connection failed: " . mysqli_connect_error());
   }
 
-$sql = "SELECT * FROM `mpr_live` LIMIT 1";
+$sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
   ?>
 
-    <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
-      <label>Show Name</label>
-      <select name="task">
+
       <?php foreach ($result as $row):?>
-      <option value=""><?php echo $row['live_url'];?></option>
+      <?php echo $row['live_url'];?>
       <?php endforeach;?>
-      </select>
-    </div>
+
 
 
 
