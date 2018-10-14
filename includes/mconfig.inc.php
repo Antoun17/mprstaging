@@ -19,7 +19,7 @@ $episode_status = mysqli_real_escape_string($link, $_REQUEST['episode_status']);
 
 $episode_status = $_POST['showstatusdropdown'];
 
-$episode_url = $_POST['episode_url'];
+$episode_url = $_POST['episodeurl'];
 
 $arr = explode('|',$task);
 
