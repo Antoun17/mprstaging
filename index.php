@@ -34,7 +34,7 @@
       die("Connection failed: " . mysqli_connect_error());
   }
 
-$sql = "SELECT `live_url` FROM `mpr_live`";
+$sql = "SELECT MAX(`live_id`), `live_url`, FROM `mpr_live`";
 
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
@@ -42,7 +42,7 @@ $sql = "SELECT `live_url` FROM `mpr_live`";
 
 
   <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="<?php echo $row['live_url'] ?>"></iframe></div>
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="<?php echo $row['live_url'];?>"></iframe></div>
 
 
 <div class="container">
