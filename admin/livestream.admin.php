@@ -55,7 +55,7 @@
     </select>
     </div>
 
-<?php $var = $_POST['episodeurl']; ?>
+<?php $var = $_GET['episodeurl']; ?>
 
 <?php echo $var ?>
 
