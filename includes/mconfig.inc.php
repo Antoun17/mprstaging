@@ -19,11 +19,11 @@ $episode_status = mysqli_real_escape_string($link, $_REQUEST['episode_status']);
 
 $episode_status = $_POST['showstatusdropdown'];
 
+$episode_url = $_POST['episode_url'];
+
 $arr = explode('|',$task);
 
 $show_id = $arr[0];
-
-$media_url = $episode_url;
 
 //$episode_title = $arr[1];
 

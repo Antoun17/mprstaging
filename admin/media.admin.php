@@ -55,7 +55,7 @@
       <label>Video Select</label>
       <select name="episode_url" id="episode_url" onchange="setVideoSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $media_url = $row['media_url'];?></option>
+      <option><?php echo 'http://d1uox2u1zwzv0e.cloudfront.net/' . $row['media_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
