@@ -14,7 +14,7 @@
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
 
 
-  <h1>Media Assign Form</h1>
+  <h1>Restream Form</h1>
 
 
   <form action="/includes/lstream.admin.php" method="post">
