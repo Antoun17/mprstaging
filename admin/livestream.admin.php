@@ -52,7 +52,7 @@
 
 
 
-    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
+    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/videos/" ></iframe>
 
     <script>
     function setStreamSource() {
@@ -61,7 +61,7 @@
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
-     theVideo.src = 'https://livestream.com/accounts/25937168/events/7713617/videos/' + theUrl;
+     theVideo.src = theUrl;
     }
     </script>
 
