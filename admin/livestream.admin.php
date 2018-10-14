@@ -43,7 +43,7 @@
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo $row['episode_url'];?></option>
+      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
@@ -61,7 +61,7 @@
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
-     theVideo.src = https://livestream.com/accounts/25937168/events/7713617/videos/ + theUrl;
+     theVideo.src = theUrl;
     }
     </script>
 
