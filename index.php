@@ -34,12 +34,12 @@
       die("Connection failed: " . mysqli_connect_error());
   }
 
-$sql = "SELECT `live_url`, FROM `mpr_live`";
+$sql = "SELECT * FROM `mpr_live` LIMIT 1";
 
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
   ?>
-  
+
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Show Name</label>
       <select name="task">
