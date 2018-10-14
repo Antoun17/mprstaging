@@ -55,7 +55,7 @@
     </select>
     </div>
 
-<?php echo $live_url; ?>
+<?php echo isset($_POST['episodeurl']; ?>
 
     <div class="livestream">
     <iframe style="width: 845px;; height: 550px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
