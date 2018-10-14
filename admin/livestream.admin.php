@@ -43,7 +43,7 @@
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
       <?php foreach ($result as $row):?>
-      <option><?php echo $row['episode_url'];?></option>
+      <option><?php echo $live_url = $row['episode_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
@@ -51,13 +51,11 @@
     <div class="form-group w-25 p-3"style="background-color: #eee;">
       <select name="live_url">
       <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
-      <option value="<?php $_POST['episodeurl']; ?>">RESTREAM</option>
+      <option value="<?php $live_url ?>">RESTREAM</option>
     </select>
     </div>
 
-  <?php echo  $_POST['episodeurl']; ?>
-
-
+<?php echo $live_url; ?>
 
     <div class="livestream">
     <iframe style="width: 845px;; height: 550px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
