@@ -39,6 +39,16 @@
     <?php mysqli_close($conn); ?>
 
 
+    <div class="form-group w-25 p-3"style="background-color: #eee;">
+      <select name="stream_status">
+        <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVESTREAM</option>
+        <?php foreach ($result as $row):?>
+        <option><?php echo $row['episode_url'];?></option>
+        <?php endforeach;?>
+    </select>
+    </div>
+
+
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
       <select name="episodeurl" id="episodeurl" onchange="setStreamSource()">
@@ -47,19 +57,6 @@
       <?php endforeach;?>
       </select>
     </div>
-<?php
-    if(isset($_POST["episodeurl"])){
-        $draft= $_POST["episodeurl"];
-        echo $draft;
-    }
-?>
-    <div class="form-group w-25 p-3"style="background-color: #eee;">
-      <select name="live_url">
-      <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
-      <option value="<?php $live_url ?>">RESTREAM</option>
-    </select>
-    </div>
-
 
 
     <div class="livestream">
