@@ -12,7 +12,7 @@
 <body>
 
 
-  <?php include("/nav.inc.php"); ?>
+  <?php include("/includes/nav.inc.php"); ?>
 
 
 <div class="container w-50 p-3" style="padding-top: 75px; background-color: #eee;">
