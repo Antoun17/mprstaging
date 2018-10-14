@@ -78,7 +78,7 @@
                  <?php foreach ($result2 as $row):
                    if($isfirst==1) {
                      echo "<P><h2>";
-                     echo $row['show_name'];
+                    echo '<center>' echo $row['show_name']; '</center>';
                      echo "</h2><br>";
                      echo "<P>";
                     $isfirst = 0;?>
