@@ -47,7 +47,12 @@
       <?php endforeach;?>
       </select>
     </div>
-
+<?php
+    if(isset($_GET["episodeurl"])){
+        $draft= $_GET["episodeurl"];
+        echo $draft;
+    }
+?>
     <div class="form-group w-25 p-3"style="background-color: #eee;">
       <select name="live_url">
       <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
@@ -55,9 +60,7 @@
     </select>
     </div>
 
-<?php $var = $_GET['episodeurl']; ?>
 
-<?php echo $var ?>
 
     <div class="livestream">
     <iframe style="width: 845px;; height: 550px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
