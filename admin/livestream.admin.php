@@ -78,34 +78,11 @@
       mysqli_close($conn);
       ?>
 
-    <div class="form-group w-50 p-3" style="background-color: #eee; padding-top: 20px; padding-bottom: 40px;" >
-      <label>Episode Date</label>
-      <input type="date" class="form-control" name="episode_date">
-
-
-      <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
-        <label>Show Name</label>
-        <select name="task">
-        <?php foreach ($result as $row):?>
-        <option value="<?php echo $row['show_id'] . "|" . $row['show_name'];?>"><?php echo $row['show_name'];?></option>
-        <?php endforeach;?>
-        </select>
-      </div>
-
-  <div class="form-group w-50 p-3"style="background-color: #eee;">
-    <label>Episode Title</label>
-    <input type="text" name="episode_title">
-  </div>
-
-  <div class="form-group w-50 p-3 "style="background-color: #eee;">
-    <label for="description">Episode Description</label>
-    <textarea name="episode_description" rows="10" cols="40"> </textarea>
-  </div>
 
   <div class="form-group w-25 p-3"style="background-color: #eee;">
-    <select name="showstatusdropdown">
-    <option value="INACTIVE">INACTIVE</option>
-    <option value="ACTIVE">ACTIVE</option>
+    <select name="live_url">
+    <option value="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false">LIVE</option>
+    <option value="<?php $_POST['episodeurl']; ?>">RESTREAM</option>
   </select>
   </div>
 
