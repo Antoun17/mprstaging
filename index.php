@@ -27,22 +27,22 @@
 <?php include("chat.inc.php"); ?>
 
 <?php
+  // Create connection
+  $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+  // Check connection
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
 
-$nconn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+$sql = "SELECT MAX(`live_id`), `live_url`, FROM `mpr_live`";
 
-if (!$nconn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-$sqlep = "SELECT MAX(live_id) FROM `mpr_live` LIMIT 1";
-
-
-$result = mysqli_query($nconn, $sqlep); ?>
-
-<?php mysqli_close($conn); ?>
+  $result = mysqli_query($conn, $sql);
+  mysqli_close($conn);
+  ?>
 
 
   <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div>
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="?<?php echo $row['live_url'] ?>"></iframe></div>
 
 
 <div class="container">
