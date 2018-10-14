@@ -52,7 +52,7 @@
 
 
 
-    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/videos/" ></iframe>
+    <iframe id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
 
     <script>
     function setStreamSource() {
