@@ -61,7 +61,7 @@
      var theUrl;
 
      theUrl = theSelect.options[theSelect.selectedIndex].value;
-     theVideo.src = theUrl;
+     theVideo.src = https://livestream.com/accounts/25937168/events/7713617/videos/ + theUrl;
     }
     </script>
 
