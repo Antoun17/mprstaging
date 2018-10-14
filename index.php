@@ -39,6 +39,16 @@ $sql = "SELECT `live_url`, FROM `mpr_live`";
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
   ?>
+  
+    <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
+      <label>Show Name</label>
+      <select name="task">
+      <?php foreach ($result as $row):?>
+      <option value=""><?php echo $row['live_url'];?></option>
+      <?php endforeach;?>
+      </select>
+    </div>
+
 
 
   <div class="livestream" style="width: 100%; height: 100%;">
