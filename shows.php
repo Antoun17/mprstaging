@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <meta charset="utf-8">
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
@@ -19,51 +16,8 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  <?php include("chat.inc.php"); ?>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarNavDropdown" class="navbar-collapse collapse">
-          <a class="navbar-brand" href="/">
-            <img class=" navbar-header mr-auto"src="/sites/default/files/Navbarlogo.png" width="85px" height="80px">
-          </a>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white btn-lg btn-warning"style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/schedule">Schedule</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white btn-lg btn-warning " style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;"href="/shows.php">Shows</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/supportmpr">Donate/Sponsor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white btn-lg btn-warning" style="padding-top: 15px; padding-bottom: 15px; padding-right:10px; padding-left:10px; margin: 10px; border-color:#FAAF42;" href="/shop">Shop</a>
-                </li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-          <li style="padding-right: 10px;"><a href="/user/login">Login</a></li>
-
-          <li><a href="/user/logout">Logout</a></li>
-            </ul>
-
-            <style>
-            .navbar-header {
-              width: 60%;
-              height: auto;
-            }
-            img {
-              width: 100%;
-              height: auto;
-            }
-            </style>
-        </div>
-    </nav>
 
 <main class="main-area">
 <?php
