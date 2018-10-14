@@ -40,6 +40,17 @@ $sql = "SELECT * FROM `mpr_live` LIMIT 1";
   mysqli_close($conn);
   ?>
 
+    <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
+      <label>Show Name</label>
+      <select name="task">
+      <?php foreach ($result as $row):?>
+      <option value=""><?php echo $row['live_url'];?></option>
+      <?php endforeach;?>
+      </select>
+    </div>
+
+
+
   <div class="livestream" style="width: 100%; height: 100%;">
   <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" class="embed-responsive-item" src="<?php echo $row['live_url'];?>"></iframe></div>
 
