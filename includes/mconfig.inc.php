@@ -23,6 +23,8 @@ $arr = explode('|',$task);
 
 $show_id = $arr[0];
 
+$media_url = $episode_url;
+
 //$episode_title = $arr[1];
 
 // attempt insert query execution
