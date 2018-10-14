@@ -34,7 +34,7 @@
       die("Connection failed: " . mysqli_connect_error());
   }
 
-$sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
+$sql = "SELECT * FROM `mpr_live` LIMIT 1";
 
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
