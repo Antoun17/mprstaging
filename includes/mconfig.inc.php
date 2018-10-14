@@ -17,9 +17,9 @@ $episode_id = mysqli_real_escape_string($link, $_REQUEST['episode_id']);
 $episode_url = mysqli_real_escape_string($link, $_REQUEST['episode_url']);
 $episode_status = mysqli_real_escape_string($link, $_REQUEST['episode_status']);
 
-$episode_status = $_POST['showstatusdropdown'];
+$episode_url = $_POST['showstatusdropdown'];
 
-$episode_url = $_POST['episodeurl'];
+//$episode_url = $_POST['episodeurl'];
 
 $arr = explode('|',$task);
 
