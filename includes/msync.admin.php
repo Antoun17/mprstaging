@@ -7,18 +7,15 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$random = rand(0,100000);
-
-$sql = "UPDATE mpr_media SET t1.media_id = $random";
+$sql = "UPDATE mpr_media t1, mpr_episode t2 SET t1.media_id = t2.episode_id WHERE t1.media_id LIKE t2.episode_url";
 
 if(mysqli_query($link, $sql)){
-    echo "Updated Inventory.";
+    echo "Sync Complete";
 } else{
     echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 }
 
 mysqli_close($link);
-
 ?>
 
 <!DOCTYPE html>
