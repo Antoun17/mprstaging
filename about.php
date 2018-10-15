@@ -21,7 +21,7 @@
     </div>
 
     <div class="text container">
-      <p class="text-white" style="background-color: #333333; padding-top: 50px; text-indent: 25px;">
+      <p class="text-white" style="background-color: #161616; padding-top: 50px; text-indent: 25px;">
 
         Maker Park Radio is a Non-Profit Community Streaming Radio Station, broadcasting from the Staten Island Makerspace in the Stapleton neighborhood of Staten Island, New York City. We are supported by our community sponsors and listeners.
         Maker Park Radio is committed to community building through inclusiveness of all music styles, genders, ethnicities, ages, sexual orientation and economic status through a mutual love and respect for music and artistic performance.

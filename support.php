@@ -10,7 +10,7 @@
 
 
   </head>
-  <body>
+  <body style="background: #161616;">
 
     <?php include("includes/nav.inc.php"); ?>
 
@@ -22,9 +22,9 @@
 
 
 
-    <div class="card container" style="width: 100%; height: 600px; background-color: #333333; border-color: #333333;">
+    <div class="card container" style="width: 100%; height: 600px; background-color: #161616; border-color: #161616;">
       <div class="card-block">
-        <p class="text-white" style="background-color: #333333; padding-top: 50px;">
+        <p class="text-white" style="background-color: ##161616; padding-top: 50px;">
 
 Support your community-building streaming radio station! We are a registered 501c3 Non-Profit and need your help to keep our programming going!
 
