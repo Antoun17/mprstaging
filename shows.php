@@ -17,11 +17,6 @@
 
 <body style="background-color: #161616;">
 
-<style>
-  .h2 {
-    color: white;
-  }
-</style>
 
 
   <?php include("includes/nav.inc.php"); ?>
@@ -92,7 +87,7 @@
                      echo "<P>";
                      echo "</center>";
                     $isfirst = 0;?>
-                    <h2>Episodes</h2>
+                    <h2>Episodes</h2 style="color: white;">
                                 <section class="cards">
                     <?php
                    }
