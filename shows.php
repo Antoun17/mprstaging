@@ -46,9 +46,7 @@
               $sql = "SELECT * FROM `mpr_episode` episodetbl WHERE episodetbl.`episode_id`=$episode_id_var LIMIT 1;";
               $result = mysqli_query($conn, $sql);
 
-              $main_url = $row['episode_base_url'] . $row['episode_url'] . '?>/player?enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';
-
-
+      
               foreach ($result as $row): ?>
               <h2>
               <?php echo $row['episode_title']; ?>
@@ -57,7 +55,7 @@
               </h2>
                 <div class="container-fluid livestream" style="width: 100%; height: 100%;">
                 <div class="container-fluid embed-responsive embed-responsive-16by9">
-                <iframe allowfullscreen="true" class="embed-responsive-item" src="<?php echo $main_url ?>"></iframe></div></div>
+                <iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/videos/<?php echo $row['episode_url']; ?>/player?enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div></div>
 <?php
                  $show_id = $row['show_id'];
               endforeach;
