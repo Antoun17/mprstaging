@@ -15,7 +15,13 @@
     <title>Shows Page</title>
 </head>
 
-<body style="background-color: #161616;>
+<body style="background-color: #161616;">
+
+<style>
+  .h2 {
+    color: white;
+  }
+</style>
 
 
   <?php include("includes/nav.inc.php"); ?>
