@@ -34,7 +34,7 @@
 
 
 
-          <div class="centered">
+          <div class=" container centered">
 
 
             <?php
@@ -46,7 +46,7 @@
               $sql = "SELECT * FROM `mpr_episode` episodetbl WHERE episodetbl.`episode_id`=$episode_id_var LIMIT 1;";
               $result = mysqli_query($conn, $sql);
 
-      
+
               foreach ($result as $row): ?>
               <h2>
               <?php echo $row['episode_title']; ?>
