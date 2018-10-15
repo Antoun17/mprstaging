@@ -22,7 +22,7 @@
 
 
 
-<main class="main-area">
+<main class="main-area" style="background-color: #161616;>
 <?php
   // Create connection
   $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
