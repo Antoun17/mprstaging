@@ -16,7 +16,7 @@
                       <a class="nav-link" href="/about.php">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/schedule">Schedule</a>
+                    <a class="nav-link" href="/schedule.php">Schedule</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/shows.php">Shows</a>
@@ -25,7 +25,7 @@
                     <a class="nav-link" href="/archive.php">Archive</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/donors">Donors</a>
+                    <a class="nav-link" href="/donors.php">Donors</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/support.php">Donate/Sponsor</a>

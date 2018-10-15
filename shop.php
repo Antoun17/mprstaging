@@ -10,7 +10,7 @@
 
 
   </head>
-  <body>
+  <body style="background: #161616;">
 
   <?php include("includes/nav.inc.php"); ?>
 
