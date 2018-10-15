@@ -34,7 +34,7 @@
 
 
 
-          <div class=" container centered">
+          <div class="container centered" style="background-color: #161616;">
 
 
             <?php
