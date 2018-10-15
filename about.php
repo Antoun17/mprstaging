@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
       <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="includes/frontpg.css">
 
 
   </head>
