@@ -13,8 +13,6 @@
 
 <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 </head>
 
 
