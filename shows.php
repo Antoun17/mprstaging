@@ -96,7 +96,7 @@
                      <div class="card-content">
                        <h2> <a href="shows.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_title']; ?></a> - <?php echo $row['episode_date']; ?>
                        <p class="card-text collapse" id="viewdetails<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_description']; ?></p>
-                       <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['episode_id']; ?>">Show Info</a> </p>
+                       <p><a class="btn btn-warning" style="color: black;" data-toggle="collapse" data-target="#viewdetails<?php echo $row['episode_id']; ?>">Show Info</a> </p>
                      <!-- .card-content -->
                  </div>
                     </div>
@@ -128,7 +128,7 @@
                 <div class="card-content">
                    <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
                    <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                   <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
+                   <p><a class="btn btn-warning "style="color: black;" data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
                  <!-- .card-content -->
                </a>
              </div>
