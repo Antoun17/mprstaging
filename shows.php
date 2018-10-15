@@ -92,7 +92,7 @@
                     <?php
                    }
 ?>
-                 <div class="card" style="color: white; background-color: #161616;">
+                 <div class="card" style="color: inherit; color: white; background-color: #161616;">
                      <div class="card-content">
                        <h2> <a href="shows.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_title']; ?></a> - <?php echo $row['episode_date']; ?>
                        <p class="card-text collapse" id="viewdetails<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_description']; ?></p>
@@ -123,7 +123,7 @@
 
              <?php foreach ($result as $row):?>
 
-             <div class="card" style="color: white; background-color: #161616;">
+             <div class="card" style="color: inherit; color: white; background-color: #161616;">
                <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
                 <div class="card-content">
                    <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
