@@ -57,7 +57,7 @@
               </h2>
                 <div class="container-fluid livestream" style="width: 100%; height: 100%;">
                 <div class="container-fluid embed-responsive embed-responsive-16by9">
-                <iframe allowfullscreen="true" class="embed-responsive-item" src="<?php $main_url ?>"></iframe></div></div>
+                <iframe allowfullscreen="true" class="embed-responsive-item" src="<?php echo $main_url ?>"></iframe></div></div>
 <?php
                  $show_id = $row['show_id'];
               endforeach;
