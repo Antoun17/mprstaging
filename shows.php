@@ -4,6 +4,7 @@
 
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+
     <meta charset="utf-8">
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
     <meta name="MobileOptimized" content="width">
@@ -68,12 +69,12 @@
                  <!-- .card -->
                <?php endforeach;
 
-                    }
-                              mysqli_close($conn);
-                  ?>
+                        mysqli_close($conn);
 
+            }
+              ?>
               </section>
-              <!-- .card -->
+		  
 
           </div>
     <!-- .centered -->
