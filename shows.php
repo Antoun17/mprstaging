@@ -30,51 +30,43 @@
 
         <div class="container centered">
 
+
+		            <section class="cards">
+
 <?php
-            if (isset($_GET["show_id"])) {
 
-            $show_id_var = ($_GET["show_id"]);
-
-                $sql = "SELECT * FROM `mpr_show` showtbl, `mpr_episode` episodetbl WHERE showtbl.`show_status` = 'ACTIVE' and showtbl.`show_id`=episodetbl.`show_id` and showtbl.`show_id`=$show_id_var;";
-                $result2 = mysqli_query($conn, $sql);
-                $isfirst = 1;
-                ?>
+            $sql = "SELECT `show_name`, `show_id`, `show_status`, `show_desc`,`show_url`,`show_insta`,`show_facebook`, `show_img` FROM `mpr_show` WHERE `show_status` = 'ACTIVE'";
+            $result = mysqli_query($conn, $sql);
+            ?>
 
 
 
-                 <?php foreach ($result2 as $row):
-                   if($isfirst==1) {
-                     echo "<P><h2>";
-                     echo $row['show_name'];
-                     echo "</h2><br>";
-                     echo "<P>";
-                    $isfirst = 0;?>
-                    <center> <img src="<?php echo $row['show_img']; ?>" alt="meow" style="width: 45%;"></center><P><h2>Episodes</h2><P>
-                                <section class="cards">
-                    <?php
-                   }
-?>
-                 <div class="card">
+             <?php foreach ($result as $row):?>
+
+             <div class="card">
+               <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
                  <figure class="thumbnail">
                  <img src="<?php echo $row['show_img']; ?>" alt="meow">
                  </figure>
-                     <div class="card-content">
-                       <h2> <a href="shows.php?episode_id=<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_title']; ?></a> - <?php echo $row['episode_date']; ?>
-                       <p class="card-text collapse" id="viewdetails<?php echo $row['episode_id']; ?>&show_id=<?php echo $row['show_id']; ?>"><?php echo $row['episode_description']; ?></p>
-                       <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['episode_id']; ?>">Show Info</a> </p>
-                     <!-- .card-content -->
-                 </div>
-</div>
+                 <div class="card-content">
+                   <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
+                   <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
+                   <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
+                 <!-- .card-content -->
+               </a>
+             </div>
+             </div>
+             <!-- .card -->
+           <?php endforeach;
 
-                 <!-- .card -->
-               <?php endforeach;
+                         mysqli_close($conn);
+           ?>
 
-                        mysqli_close($conn);
 
-            }
-              ?>
-              </section>
-		  
+              <!-- .card -->
+
+            </section>
+            <!-- .cards -->
 
           </div>
     <!-- .centered -->
