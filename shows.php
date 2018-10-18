@@ -19,6 +19,35 @@
 <?php include("includes/nav.inc.php"); ?>
 
 <main class="main-area">
+
+  <div class="card-deck">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <?php
   // Create connection
   $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
@@ -28,10 +57,10 @@
   }
   ?>
 
-        <div class="container centered">
+        <div class="card-deck container centered">
 
 
-		            <section class="cards">
+		            <div class="cards">
 
 <?php
 
@@ -65,7 +94,7 @@
 
               <!-- .card -->
 
-            </section>
+            </div>
             <!-- .cards -->
 
           </div>
