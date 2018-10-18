@@ -20,17 +20,46 @@
 
 <?php include("includes/nav.inc.php"); ?>
 
-  <div class="card-deck">
-    <div class="card bg-primary">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the first card</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+    <div class="row">
 
+        <div class="col-12">
+            <div class="card-deck">
+                <!-- 4 of these -->
+                <div class="card">
+                    <img src="//placehold.it/700x390" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="card">
+                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="card">
+                    <img src="//placehold.it/600x400" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="card">
+                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="w-100 py-2"></div>
+                <!-- 4 of these -->
+                <div class="card">
+                    <img src="//placehold.it/800x400" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="card">
+                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+                <div class="card">
+                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
+                    <div class="card-body">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php
   // Create connection
