@@ -20,8 +20,6 @@
 
 <?php include("includes/nav.inc.php"); ?>
 
-<main class="main-area">
-
   <div class="card-deck">
     <div class="card bg-primary">
       <div class="card-body text-center">
@@ -88,8 +86,6 @@
               }
             }
             </style>
-
-  </main>
   </body>
 
 
