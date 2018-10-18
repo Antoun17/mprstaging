@@ -29,23 +29,7 @@
         <p class="card-text">Some more text to increase the height</p>
       </div>
     </div>
-    <div class="card bg-warning">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the second card</p>
-      </div>
-    </div>
-    <div class="card bg-success">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the third card</p>
-      </div>
-    </div>
-    <div class="card bg-danger">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the fourth card</p>
-      </div>
-    </div>
   </div>
-</div>
 
 
 <?php
@@ -57,10 +41,10 @@
   }
   ?>
 
-        <div class="card-deck container centered">
+        <div class="card-deck">
 
 
-		            <div class="cards">
+
 
 <?php
 
@@ -77,7 +61,7 @@
                  <figure class="thumbnail">
                  <img src="<?php echo $row['show_img']; ?>" alt="meow">
                  </figure>
-                 <div class="card-content">
+                 <div class="card-body">
                    <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
                    <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
                    <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
@@ -96,9 +80,6 @@
 
             </div>
             <!-- .cards -->
-
-          </div>
-    <!-- .centered -->
   </main>
   </body>
 
