@@ -16,11 +16,11 @@
   <?php include("includes/nav.inc.php"); ?>
 
 
-
+<center>
 <div class="container centered">
   <img src="/assets/tomkrisresized.jpg" alt="Card image cap" style="width: 50%;"> </img>
     </div>
-
+</center>
     <div class="text container">
       <p class="text-white" style="background-color: #161616; padding-top: 50px; text-indent: 25px;">
 
