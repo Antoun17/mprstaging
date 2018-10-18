@@ -43,7 +43,6 @@
 
         <div class="container">
               <div class="row equal">
-                <div class="col-xs-12 col-sm-3">
 
 
 
@@ -56,7 +55,7 @@
 
 
              <?php foreach ($result as $row):?>
-             <div class="card">
+             <div class="card col-xs-12 col-sm-3">
                <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
                  <figure class="card-img-top img-fluid">
                  <img src="<?php echo $row['show_img']; ?>" alt="meow">
@@ -69,7 +68,6 @@
                </a>
              </div>
              </div>
-           </div>
          </div>
              <!-- .card -->
            <?php endforeach;
