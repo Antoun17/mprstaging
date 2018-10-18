@@ -80,17 +80,22 @@
 
             </div>
             <!-- .cards -->
+
+            <style>
+
+            @media (min-width: 768px) {
+              .row.equal {
+                display: flex;
+                flex-wrap: wrap;
+              }
+            }
+            </style>
+
   </main>
   </body>
 
 
-      <style>
 
-      .row {
-   display: flex;
-   flex-wrap: wrap;
-      }
-      </style>
 
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
