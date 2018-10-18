@@ -29,9 +29,6 @@
   }
   ?>
 
-  <div class="container">
-      <div class="row">
-
 
 
 <?php
@@ -43,6 +40,8 @@
 
 
              <?php foreach ($result as $row):?>
+               <div class="container">
+                   <div class="row">
                <div class="col-12">
                    <div class="card-deck">
                      <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
