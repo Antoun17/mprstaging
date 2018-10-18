@@ -42,8 +42,8 @@
   ?>
 
         <div class="container">
-
-                <div class="col-sm-3">
+              <div class="row equal">
+                <div class="col-xs-12 col-sm-3">
 
 
 
@@ -56,7 +56,6 @@
 
 
              <?php foreach ($result as $row):?>
-                <div class="row">
              <div class="card">
                <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
                  <figure class="card-img-top img-fluid">
