@@ -42,20 +42,6 @@
                     <img src="//placehold.it/600" class="card-img-top img-adjusted">
                     <div class="card-body">...</div>
                 </div>
-                <div class="w-100 py-2"></div>
-                <!-- 4 of these -->
-                <div class="card">
-                    <img src="//placehold.it/800x400" class="card-img-top img-adjusted">
-                    <div class="card-body">...</div>
-                </div>
-                <div class="card">
-                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
-                    <div class="card-body">...</div>
-                </div>
-                <div class="card">
-                    <img src="//placehold.it/600" class="card-img-top img-adjusted">
-                    <div class="card-body">...</div>
-                </div>
             </div>
         </div>
     </div>
