@@ -18,7 +18,7 @@
 
 
 <div class="container">
-  <img src="/sites/default/files/mprphotos/tomkrisresized.jpg" alt="Card image cap" style="width: 50%;"> </img>
+  <img src="/assets/tomkrisresized.jpg" alt="Card image cap" style="width: 50%;"> </img>
     </div>
 
     <div class="text container">
