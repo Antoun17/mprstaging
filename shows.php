@@ -59,7 +59,7 @@
 
              <div class="card">
                <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
-                 <figure class="thumbnail">
+                 <figure class="card-img-top img-fluid">
                  <img src="<?php echo $row['show_img']; ?>" alt="meow">
                  </figure>
                  <div class="card-block">
