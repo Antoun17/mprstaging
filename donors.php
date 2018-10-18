@@ -9,7 +9,7 @@
   </head>
   <body style="background-color: #161616;">
     <center>
-    <img style="padding-top: 75px;"class="container" src="/sites/default/files/mprphotos/Donors.jpeg" alt="">
+    <img style="padding-top: 75px;"class="container" src="/assets/Donors.jpeg" alt="">
     </center>
       </body>
     </html>
