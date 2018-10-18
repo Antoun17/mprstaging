@@ -17,7 +17,7 @@
 
 
 
-<div class="container">
+<div class="container centered">
   <img src="/assets/tomkrisresized.jpg" alt="Card image cap" style="width: 50%;"> </img>
     </div>
 
