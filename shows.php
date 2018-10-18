@@ -41,8 +41,9 @@
   }
   ?>
 
-        <div class="card-deck">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
 
 
 
@@ -61,7 +62,7 @@
                  <figure class="thumbnail">
                  <img src="<?php echo $row['show_img']; ?>" alt="meow">
                  </figure>
-                 <div class="card-body">
+                 <div class="card-block">
                    <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
                    <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
                    <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
@@ -79,12 +80,20 @@
               <!-- .card -->
 
             </div>
+          </div>
+        </div>
             <!-- .cards -->
   </main>
   </body>
 
 
       <style>
+
+      .row {
+   display: flex;
+   flex-wrap: wrap;
+      }
+
 
 
         body {font-family: sans-serif;}
