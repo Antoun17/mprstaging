@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Donors</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
 
     <?php include("includes/nav.inc.php"); ?>
 
