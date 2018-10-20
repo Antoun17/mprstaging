@@ -27,7 +27,7 @@
     if (!$nconn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    $sqlep = "SELECT * FROM `mpr_episode` LIMIT 10";
+    $sqlep = "SELECT * FROM `mpr_episode`";
 
 
     $result = mysqli_query($nconn, $sqlep); ?>
