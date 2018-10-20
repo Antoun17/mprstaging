@@ -16,8 +16,10 @@ $episode_date = mysqli_real_escape_string($link, $_REQUEST['episode_date']);
 $episode_id = mysqli_real_escape_string($link, $_REQUEST['episode_id']);
 $episode_url = mysqli_real_escape_string($link, $_REQUEST['episode_url']);
 $episode_status = mysqli_real_escape_string($link, $_REQUEST['episode_status']);
+$episode_url_type = mysqli_real_escape_string($link, $_REQUEST['$episode_url_type']);
 
 $episode_status = $_POST['showstatusdropdown'];
+$episode_url_type = $_POST['linktypedropdown'];
 
 $episode_url = $_POST['episodeurl'];
 

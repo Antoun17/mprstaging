@@ -94,7 +94,7 @@
       </div>
 
 
-  
+
 
   <div class="form-group w-50 p-3"style="background-color: #eee;">
     <label>Episode Title</label>
@@ -112,6 +112,14 @@
     <option value="ACTIVE">ACTIVE</option>
   </select>
   </div>
+
+
+    <div class="form-group w-25 p-3"style="background-color: #eee;">
+      <select name="linktypedropdown">
+      <option value="LIVESTREAM">LIVESTREAM LINK</option>
+      <option value="AMAZON">AMAZON LINK</option>
+    </select>
+    </div>
 
 <div class="submitbuttons" style="padding-top: 30px;">
   <button type="submit" class="btn btn-primary">Submit</button>
