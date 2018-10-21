@@ -42,11 +42,10 @@
       <option> <?php echo 'https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false' ?>
 
       <?php foreach ($result as $row):?>
-      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'] . '/player?width=900&height=900&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';?></option>
+      <option><?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'];?></option>
       <?php endforeach;?>
       </select>
     </div>
-
 
     <div class="livestream">
     <iframe style="width: 845px;; height: 550px;" id="myStream" allowfullscreen="true" class="embed-responsive-item" src="" ></iframe>
