@@ -34,6 +34,20 @@
 
     <?php mysqli_close($conn); ?>
 
+<?php
+
+
+if ("SELECT * FROM `mpr_episode` WHERE episode_url_type = 'LIVESTREAM'";) {
+echo "This is a Livestream URL";
+
+} elseif ("SELECT * FROM `mpr_episode` WHERE episode_url_type = 'RESTREAM'";) {
+  echo "This is a Restream URL";
+}
+
+
+
+
+ ?>
 
     <div class="dropdown"style="background-color: #eee; padding-top: 30px; padding-bottom: 30px;">
       <label>Video Select</label>
