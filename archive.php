@@ -58,18 +58,18 @@
 
               <?php
 
-              echo $row['episode_url'];
-
-              if ($sqllive = "SELECT * FROM `mpr_episode` WHERE episode_url_type = 'LIVESTREAM'";) {
+              if ($sqllive = "SELECT `episode_url_type` FROM `mpr_episode` WHERE episode_url_type = 'LIVESTREAM'";) {
               $result = mysqli_query($conn, $sqllive);
               echo "This is a Livestream URL";
 
-            } elseif ($sqlrestream = "SELECT * FROM `mpr_episode` WHERE episode_url_type = 'RESTREAM'";) {
+            } elseif ($sqlrestream = "SELECT `episode_url_type` FROM `mpr_episode` WHERE episode_url_type = 'RESTREAM'";) {
               $result = mysqli_query($conn, $sqlrestream);
                 echo "This is a Restream URL";
               }
 
               ?>
+
+
 
 
                 <div class="container-fluid livestream" style="width: 100%; height: 100%;">
