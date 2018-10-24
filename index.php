@@ -110,7 +110,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
-      <div class="slide"><img  href="https://www.makerspace.nyc/" src="assets/mprsponsors/simakerspace.png"></div>
+      <div href="https://www.makerspace.nyc/" class="slide"><img src="assets/mprsponsors/simakerspace.png"></div>
       <div class="slide" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
       <div class="slide" href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png"></div>
       <div class="slide" href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png"></div>
