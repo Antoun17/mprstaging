@@ -110,16 +110,15 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
-    <div class="slide"> <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-      <div class="slide" href="https://www.makerspace.nyc/"><img src="assets/mprsponsors/simakerspace.png"></div>
-      <div class="slide" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
-      <div class="slide" href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png"></div>
-      <div class="slide" href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png"></div>
-      <div class="slide" href="http://pesochin.video/" ><img src="assets/mprsponsors/gp-logo.png"></div>
-      <div class="slide" href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png"></div>
-      <div class="slide" href="https://statenislandarts.org/" ><img src="assets/mprsponsors/sia.png"></div>
-      <div class="slide" href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/flagship.png"></div>
-      <div class="slide"><img src="assets/mprsponsors/sibeercompany.png"></div>
+    <div class="slide"> <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="http://pesochin.video/" ><img src="assets/mprsponsors/gp-logo.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://statenislandarts.org/" ><img src="assets/mprsponsors/sia.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/flagship.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
+    <div class="slide"> <a href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/sibeercompany.png" alt="HTML tutorial" style="width:200px;height:200px;border:0;"></a> </div>
    </section>
      <h2 class="my-4 text-center text-white container">"This project was funded in part by an NYSCA Encore Grant"</h2>
 </div>
