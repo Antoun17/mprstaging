@@ -111,8 +111,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
     <div class="slide" <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <a href="tvshow.php?show=howimetyourmother"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="How I Met Your Mother" style="margin:5px" align="left"></a>
-      <div class="slide" href="https://www.makerspace.nyc/"><img src="assets/mprsponsors/simakerspace.png"></div>
+    <a href="https://www.makerspace.nyc/"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="How I Met Your Mother" style="margin:5px" align="left"></a>
+      <div class="slide" href=""><img src="assets/mprsponsors/simakerspace.png"></div>
       <div class="slide" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
       <div class="slide" href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png"></div>
       <div class="slide" href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png"></div>
