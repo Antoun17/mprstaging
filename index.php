@@ -107,26 +107,22 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 </div>
 
 
-<div class="sponsorslider container"
-    data-cycle-fx=carousel
-    data-cycle-timeout=1000
-    data-cycle-carousel-visible=5
-    data-cycle-carousel-fluid=true
-    >
-    <div class="slide1" href="https://www.makerspace.nyc/"><img src="assets/mprsponsors/simakerspace.png"></div>
-    <div class="slide2" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
-    <div class="slide3" href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png"></div>
-    <div class="slide4" href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png"></div>
-    <div class="slide5" href="http://pesochin.video/" ><img src="assets/mprsponsors/gp-logo.png"></div>
-    <div class="slide6" href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png"></div>
-    <div class="slide7" href="https://statenislandarts.org/" ><img src="assets/mprsponsors/sia.png"></div>
-    <div class="slide8" href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/flagship.png"></div>
-    <div class="slide9"><img src="assets/mprsponsors/sibeercompany.png"></div>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<div class="slider autoplay">
 
-    <h2 class="my-4 text-center text-white container">"This project was funded in part by an NYSCA Encore Grant"</h2>
+        <a href="tvshow.php?show=howimetyourmother"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="How I Met Your Mother" style="margin:5px" align="left"></a>
+
+        <a href="tvshow.php?show=thebigbangtheory"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="The Big Bang Theory" style="margin:5px" align="left"></a>
+
+        <a href="tvshow.php?show=dexter"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="Dexter" style="margin:5px" align="left"></a>
+
+        <a href="tvshow.php?show=breakingbad"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Breaking Bad" style="margin:5px" align="left"></a>
+
+        <a href="tvshow.php?show=sherlock"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Sherlock" style="margin:5px" align="left"></a>
+
+        <a href="tvshow.php?show=homeland"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Homeland" style="margin:5px" align="left"></a>
 </div>
-
-
 
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
