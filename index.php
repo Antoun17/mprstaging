@@ -107,27 +107,11 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 </div>
 
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
-<div class="slider autoplay">
-
-        <a href="tvshow.php?show=howimetyourmother"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="How I Met Your Mother" style="margin:5px" align="left"></a>
-
-        <a href="tvshow.php?show=thebigbangtheory"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="The Big Bang Theory" style="margin:5px" align="left"></a>
-
-        <a href="tvshow.php?show=dexter"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="Dexter" style="margin:5px" align="left"></a>
-
-        <a href="tvshow.php?show=breakingbad"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Breaking Bad" style="margin:5px" align="left"></a>
-
-        <a href="tvshow.php?show=sherlock"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Sherlock" style="margin:5px" align="left"></a>
-
-        <a href="tvshow.php?show=homeland"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png" height="170px" alt="Homeland" style="margin:5px" align="left"></a>
-</div>
-
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
     <div class="slide" <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <a href="tvshow.php?show=howimetyourmother"><img src="http://upload.wikimedia.org/wikipedia/commons/3/3d/FuBK-Testbild.png"  height="170px" alt="How I Met Your Mother" style="margin:5px" align="left"></a>
       <div class="slide" href="https://www.makerspace.nyc/"><img src="assets/mprsponsors/simakerspace.png"></div>
       <div class="slide" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
       <div class="slide" href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png"></div>
