@@ -110,14 +110,14 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
-    <div class="slide" <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://www.empressgreen.com/"> <img src="assets/mprsponsors/expressgreen.jpeg" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://www.tfeesstraw.com/"> <img src="assets/mprsponsors/tfees.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://5050store.com/"> <img src="assets/mprsponsors/5050.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="http://pesochin.video/"> <img src="assets/mprsponsors/gp-logo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://projectivitygroup.org/"> <img src="assets/mprsponsors/projectivity.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://statenislandarts.org/"> <img src="assets/mprsponsors/sia.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
-    <div class="slide" <a href="https://www.flagshipbrewery.nyc/"> <img src="assets/mprsponsors/flagship.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="slide1 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://www.empressgreen.com/"> <img src="assets/mprsponsors/expressgreen.jpeg" alt="slide2 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://www.tfeesstraw.com/"> <img src="assets/mprsponsors/tfees.png" alt="slide3 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://5050store.com/"> <img src="assets/mprsponsors/5050.png" alt="slide4 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="http://pesochin.video/"> <img src="assets/mprsponsors/gp-logo.png" alt="slide5 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://projectivitygroup.org/"> <img src="assets/mprsponsors/projectivity.png" alt="slide6 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://statenislandarts.org/"> <img src="assets/mprsponsors/sia.png" alt="slide7 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
+    <div class="slide" <a href="https://www.flagshipbrewery.nyc/"> <img src="assets/mprsponsors/flagship.png" alt="slide8 tutorial" style="width:42px;height:42px;border:0;"></a> </div>
 
       <div class="slide" href=""><img src="assets/mprsponsors/simakerspace.png"></div>
       <div class="slide" href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg"></div>
