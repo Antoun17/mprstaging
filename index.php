@@ -19,6 +19,9 @@
 
 </head>
 
+<?php include("includes/nav.inc.php"); ?>
+<?php include("chat.inc.php"); ?>
+
 
 <div class="container">
 <?php
@@ -158,11 +161,6 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
     </div>
 
 <body style="background: #161616;" >
-
-
-<?php include("includes/nav.inc.php"); ?>
-<?php include("chat.inc.php"); ?>
-
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
