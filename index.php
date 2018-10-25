@@ -44,6 +44,22 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <?php $row['live_url'];?>
       <?php endforeach;?>
 
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')">News</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Livestream</h3>
+  <div class="livestream" style="width: 100%; height: 100%;">
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Events</h3>
+  <div class="livestream" style="width: 100%; height: 100%;">
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+</div>
+
+
 <script>
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
@@ -69,21 +85,6 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-
-  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')">News</button>
-
-<div id="Home" class="tabcontent">
-  <h3>Livestream</h3>
-  <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
-</div>
-
-<div id="News" class="tabcontent">
-  <h3>Events</h3>
-  <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
-</div>
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
