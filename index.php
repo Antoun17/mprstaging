@@ -20,7 +20,7 @@
 </head>
 
 
-
+<div class="container">
 <?php
   // Create connection
   $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
@@ -155,8 +155,9 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
 }
       </style>
+    </div>
 
-<body onload="zoom()" style="background: #161616;" >
+<body style="background: #161616;" >
 
 
 <?php include("includes/nav.inc.php"); ?>
