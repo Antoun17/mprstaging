@@ -47,8 +47,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <div class="container--tabs">
       	<section class="">
       		<ul class="nav nav-tabs">
-      			<li class="tab-button"><a href="#tab-1">Livestream</a></li>
-      			<li class="tab-button"><a href="#tab-2">Events</a></li>
+      			<li class="tab-button"><a href="#tab-1">Main Livestream</a></li>
+      			<li class="tab-button"><a href="#tab-2">Special Events</a></li>
       		</ul>
       		<div class="tab-content">
       			<div id="tab-1" class="tab-pane active">
@@ -104,7 +104,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       .tab-button {
         padding-right: 10px;
         color: white;
-        font-size: 25px;
+        font-size: 30px;
       }
 
       .container--tabs {
