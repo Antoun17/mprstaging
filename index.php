@@ -137,8 +137,6 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 				> a:focus {
 					color: #555;
 					cursor: default;
-					background-color: #fff;
-					border: 1px solid #ddd;
 					border-bottom-color: transparent;
 				}
 			}
