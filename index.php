@@ -102,7 +102,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <style>
 
       .tab-button {
-        padding-right: 40px;
+        padding-right: 10px;
+        color: white;
         font-size: 25px;
       }
 
