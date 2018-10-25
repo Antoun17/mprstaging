@@ -95,14 +95,15 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       	for (i = 0; i < myTabs.length; i++) {
       		myTabs[i].addEventListener("click", myTabClicks)
       	}
-      });
+      });row
 
             </script>
 
       <style>
 
       .tab-button {
-        padding-right: 10px;
+        padding-right: 40px;
+        font-size: 25px;
       }
 
       .container--tabs {
