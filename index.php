@@ -67,7 +67,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       					<p>This is the event tab</p>
       				</span>
       			</div>
-      		</div>
+          </div>
       	</section>
       </div>
 
