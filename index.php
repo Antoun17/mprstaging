@@ -24,6 +24,8 @@
 
 
 <div class="container">
+  <div class="parallax-wrapper">
+    <div class="parallax-container">
 <?php
   // Create connection
   $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
@@ -100,6 +102,20 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
       <style>
 
+      .parallax-wrapper {
+          position: relative;
+      }
+
+      .parallax-container {
+          height: 200px;
+          background-color: #0f0;
+          width: 100vw;
+          margin-left: calc(-50vw + 50% - 8px);
+          position: relative;
+      }
+
+
+
       .tab-button {
         padding-right: 10px;
         color: white;
@@ -159,6 +175,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 }
       </style>
     </div>
+  </div>
+</div>
 
 <body style="background: #161616;" >
 
