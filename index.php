@@ -116,8 +116,6 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 		width: 100%;
 		margin: 0;
 		list-style-type: none;
-		border-bottom: 1px solid #ddd;
-
 		> li {
 			float: left;
 			margin-bottom: -1px;
