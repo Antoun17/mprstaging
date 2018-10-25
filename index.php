@@ -123,7 +123,6 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 			> a {
 				float: left;
 				margin-right: 2px;
-				line-height: 1.42857143;
 				padding: 10px;
 
 				&:hover {
@@ -137,8 +136,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 				> a:focus {
 					color: #555;
 					cursor: default;
-					border-bottom-color: transparent;
-				}
+        }
 			}
 		}
 	}
