@@ -59,6 +59,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
                 <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
       				</span>
       			</div>
+          </div>
       			<div id="tab-2" class="tab-pane">
       				<span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
       				<span class="col-md-10">
