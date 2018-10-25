@@ -46,7 +46,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
       <div class="container--tabs">
       	<section class="">
-      		<ul class="nav">
+      		<ul class="nav nav-tab">
       			<li class="tab-button"><a href="#tab-1">Main Livestream</a></li>
             <li class="tab-button"> | </li>
       			<li class="tab-button"><a href="#tab-2">Special Events</a></li>
