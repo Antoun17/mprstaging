@@ -45,10 +45,10 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <?php endforeach;?>
 
       <div class="container--tabs">
-      	<section class="row">
+      	<section class="">
       		<ul class="nav nav-tabs">
-      			<li class=""><a href="#tab-1">Tab 1</a></li>
-      			<li class=""><a href="#tab-2">Tab 2</a></li>
+      			<li class="tab-button"><a href="#tab-1">Livestream</a></li>
+      			<li class="tab-button"><a href="#tab-2">Events</a></li>
       		</ul>
       		<div class="tab-content">
       			<div id="tab-1" class="tab-pane active">
@@ -100,6 +100,10 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
             </script>
 
       <style>
+
+      .tab-button {
+        padding-right: 10px;
+      }
 
       .container--tabs {
 	margin: 2rem;
