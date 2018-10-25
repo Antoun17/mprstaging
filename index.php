@@ -147,6 +147,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
 		> .tab-pane {
 			display: none;
+      width: 100%;
+      height: 100%;
 
 			&.active {
 				display: block;
