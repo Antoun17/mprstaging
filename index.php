@@ -49,28 +49,21 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       		<ul class="nav nav-tabs">
       			<li class="active"><a href="#tab-1">Tab 1</a></li>
       			<li class=""><a href="#tab-2">Tab 2</a></li>
-      			<li class=""><a href="#tab-3">Tab 3</a></li>
       		</ul>
       		<div class="tab-content">
       			<div id="tab-1" class="tab-pane active">
       				<span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
       				<span class="col-md-10">
-      					<h3>Feature 1</h3>
-      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      					<h3>Livestream</h3>
+                <div class="livestream" style="width: 100%; height: 100%;">
+                <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
       				</span>
       			</div>
       			<div id="tab-2" class="tab-pane">
       				<span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
       				<span class="col-md-10">
-      					<h3>Feature 2</h3>
-      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      				</span>
-      			</div>
-      			<div id="tab-3" class="tab-pane">
-      				<span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-      				<span class="col-md-10">
-      					<h3>Feature 3</h3>
-      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      					<h3>Events</h3>
+      					<p>This is the event tab</p>
       				</span>
       			</div>
       		</div>
@@ -171,8 +164,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       </style>
 
 
-  <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
