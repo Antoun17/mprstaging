@@ -20,11 +20,6 @@
 </head>
 
 
-<body onload="zoom()" style="background: #161616;" >
-
-
-<?php include("includes/nav.inc.php"); ?>
-<?php include("chat.inc.php"); ?>
 
 <?php
   // Create connection
@@ -161,7 +156,11 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 }
       </style>
 
+<body onload="zoom()" style="background: #161616;" >
 
+
+<?php include("includes/nav.inc.php"); ?>
+<?php include("chat.inc.php"); ?>
 
 
 <div class="container">
