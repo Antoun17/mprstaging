@@ -72,8 +72,6 @@ document.getElementById("defaultOpen").click();
 
   <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('News', this, 'green')">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
 <div id="Home" class="tabcontent">
   <h3>Livestream</h3>
@@ -83,12 +81,9 @@ document.getElementById("defaultOpen").click();
 
 <div id="News" class="tabcontent">
   <h3>Events</h3>
-  <p>Event Streams</p>
+  <div class="livestream" style="width: 100%; height: 100%;">
+  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
 </div>
-
-
-
-
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
