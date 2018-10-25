@@ -108,9 +108,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
       .parallax-container {
           height: 200px;
-          background-color: #0f0;
           width: 100vw;
-          margin-left: calc(-50vw + 50% - 8px);
           position: relative;
       }
 
