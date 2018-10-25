@@ -127,8 +127,6 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 				margin-right: 2px;
 				line-height: 1.42857143;
 				padding: 10px;
-				border: 1px solid transparent;
-				border-radius: 4px 4px 0 0;
 
 				&:hover {
 					border-color: #eee #eee #ddd;
