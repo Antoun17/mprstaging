@@ -44,8 +44,19 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <?php $row['live_url'];?>
       <?php endforeach;?>
 
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3>Livestream</h3>
+
   <div class="livestream" style="width: 100%; height: 100%;">
   <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+
+</div>
+
+
 
 
 <div class="container">
@@ -118,7 +129,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
     <div class="slide"> <a href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="https://statenislandarts.org/" ><img src="assets/mprsponsors/sia.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/flagship.png" alt="HTML tutorial"></a> </div>
-    <div class="slide"> <a href="https://www.flagshipbrewery.nyc/" ><img src="assets/mprsponsors/sibeercompany.png" alt="HTML tutorial"></a> </div>
+    <div class="slide"> <a ><img src="assets/mprsponsors/sibeercompany.png" alt="HTML tutorial"></a> </div>
    </section>
      <h2 class="my-4 text-center text-white container">"This project was funded in part by an NYSCA Encore Grant"</h2>
 </div>
