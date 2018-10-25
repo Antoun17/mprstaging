@@ -47,7 +47,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       <div class="container--tabs">
       	<section class="row">
       		<ul class="nav nav-tabs">
-      			<li class="active"><a href="#tab-1">Tab 1</a></li>
+      			<li class=""><a href="#tab-1">Tab 1</a></li>
       			<li class=""><a href="#tab-2">Tab 2</a></li>
       		</ul>
       		<div class="tab-content">
