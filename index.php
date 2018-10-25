@@ -52,7 +52,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       		</ul>
       		<div class="tab-content">
       			<div id="tab-1" class="tab-pane active">
-      				<span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+      				<span class=""></span>
       				<span class="col-md-10">
       					<h3>Livestream</h3>
                 <div class="livestream" style="width: 100%; height: 100%;">
