@@ -59,7 +59,7 @@
   </div>
 
 </div>
-
+</div>
 
   <script>
   function openCity(evt, cityName) {
@@ -76,8 +76,8 @@
       evt.currentTarget.className += " active";
   }
   </script>
-
 </div>
+
 
 
 <body style="background: #161616;" >
