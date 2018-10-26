@@ -106,14 +106,14 @@
         <style>
 
         .parallax-wrapper {
-            position: relative;
+            position: fixed;
         }
 
         .parallax-container {
             height: 200px;
             width: 100vw;
             margin-left: calc(-50vw + 50% - 8px);
-            position: fixed;
+            position: relative;
         }
 
 
