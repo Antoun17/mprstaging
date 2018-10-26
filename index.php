@@ -116,7 +116,7 @@
         }
 
         .container{
-          overflow:auto
+          overflow: hidden;
           }
 
         .tab-button {
