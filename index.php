@@ -115,7 +115,9 @@
             position: relative;
         }
 
-
+        .container{
+          overflow:auto
+          }
 
         .tab-button {
           padding-right: 10px;
