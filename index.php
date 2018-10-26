@@ -44,10 +44,6 @@
         <?php $row['live_url'];?>
         <?php endforeach;?>
 
-
-  <h2>Tabs</h2>
-  <p>Click on the buttons inside the tabbed menu:</p>
-
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'London')">Livestream</button>
     <button class="tablinks" onclick="openCity(event, 'Paris')">Events</button>
