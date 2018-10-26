@@ -106,7 +106,7 @@
         <style>
 
         .parallax-wrapper {
-            position: fixed;
+            position: relative;
         }
 
         .parallax-container {
