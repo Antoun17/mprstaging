@@ -61,9 +61,6 @@
 </div>
 
 
-<body style="background: #161616;" >
-
-
   <script>
   function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
@@ -79,6 +76,13 @@
       evt.currentTarget.className += " active";
   }
   </script>
+
+</div>
+
+
+<body style="background: #161616;" >
+
+
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
