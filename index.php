@@ -58,7 +58,6 @@
         			<div id="tab-1" class="tab-pane active">
         				<span class=""></span>
         				<span class="col-md-10">
-        					<h3>Livestream</h3>
                   <div class="livestream" style="width: 100%; height: 100%;">
                   <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
         				</span>
