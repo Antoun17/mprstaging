@@ -109,8 +109,8 @@
         }
 
         .parallax-container {
-            height: 200px;
-            width: 100vw;
+            height: 100%;
+            width: 100%;
             margin-left: calc(-50vw + 50% - 8px);
             position: relative;
         }
