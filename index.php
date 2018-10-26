@@ -113,7 +113,7 @@
             height: 200px;
             width: 100vw;
             margin-left: calc(-50vw + 50% - 8px);
-            position: relative;
+            position: fixed;
         }
 
 
