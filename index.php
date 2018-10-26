@@ -54,8 +54,8 @@
   </div>
 
   <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <div class="livestream" style="width: 100%; height: 100%;">
+    <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
   </div>
 
 </div>
