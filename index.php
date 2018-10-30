@@ -102,15 +102,15 @@
       <form action="https://nyc.us16.list-manage.com/subscribe/post?u=6338c9a8cce6df046dc5ff501&amp;id=d312a7841c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
       	<h2>Subscribe to our mailing list</h2>
-      <div class="mc-field-group">
+      <div class="form-group">
       	<label for="mce-EMAIL">Email Address </label>
       	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
       </div>
-      <div class="mc-field-group">
+      <div class="form-group">
       	<label for="mce-FNAME">First Name </label>
       	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
       </div>
-      <div class="mc-field-group">
+      <div class="form-group">
       	<label for="mce-LNAME">Last Name </label>
       	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
       </div>
