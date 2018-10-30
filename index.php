@@ -48,8 +48,8 @@
           <?php endforeach;?>
 
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Events</button>
-      <button class="tablinks" onclick="openCity(event, 'Livestream')">Livestream</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Livestream</button>
+      <button class="tablinks" onclick="openCity(event, 'Livestream')">Events</button>
 
     </div>
 
@@ -62,7 +62,7 @@
 
   <div id="Livestream" class="tabcontent">
     <div class="livestream" style="width: 100%; height: 100%;">
-  <p>Hello</p>
+  <p style="color: white;">This is Events</p>
   </div>
 
   </div>
