@@ -58,7 +58,7 @@
 
 <div id="Livestream" class="tabcontent">
   <div class="livestream" style="width: 100%; height: 100%;">
-  <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+<p>Hello </p>
 </div>
 
 </div>
