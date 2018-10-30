@@ -318,7 +318,9 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
-    
+    display: none;
+    width: 100%;
+    height: 100;
 }
 </style>
 
