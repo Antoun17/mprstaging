@@ -109,6 +109,7 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
       }
 
       .container--tabs {
+	margin: 2rem;
 
 	.nav-tabs {
 		float: left;
@@ -117,6 +118,8 @@ $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 		list-style-type: none;
 		> li {
 			float: left;
+			margin-bottom: -1px;
+
 			> a {
 				float: left;
 				margin-right: 2px;
