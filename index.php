@@ -48,7 +48,7 @@
           <?php endforeach;?>
 
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Livestream</button>
+      <button class="tablinks active" onclick="openCity(event, 'Paris')">Livestream</button>
       <button class="tablinks" onclick="openCity(event, 'Livestream')">Events</button>
 
     </div>
