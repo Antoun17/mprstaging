@@ -289,9 +289,10 @@ body {font-family: Arial;}
 
 /* Style the tab */
 .tab {
+    overflow: hidden;
+    width: auto;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 100%
 }
 
 /* Style the buttons inside the tab */
