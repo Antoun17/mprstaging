@@ -23,69 +23,66 @@
 <?php include("chat.inc.php"); ?>
 
 
-<div class="container">
 
-  <?php
-    // Create connection
-    $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-  $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
-
-    $result = mysqli_query($conn, $sql);
-    mysqli_close($conn);
-    ?>
-
-        <?php foreach ($result as $row):?>
-        <?php $row['live_url'];?>
-        <?php endforeach;?>
-
-  <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Events</button>
-    <button class="tablinks" onclick="openCity(event, 'Livestream')">Livestream</button>
-
-  </div>
-
-  <div id="Paris" class="tabcontent">
-    <div class="contianer embed-responsive embed-responsive-16by9" style="width: 100%; height: 100%;">
-    <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
-  </div>
-
-</div>
-
-<div id="Livestream" class="tabcontent">
-  <div class="livestream" style="width: 100%; height: 100%;">
-<p>Hello</p>
-</div>
-
-</div>
-</div>
-
-  <script>
-  function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-  }
-  </script>
-</div>
 
 
 
 <body style="background: #161616;" >
 
+    <?php
+      // Create connection
+      $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+      // Check connection
+      if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+      }
 
+    $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
+
+      $result = mysqli_query($conn, $sql);
+      mysqli_close($conn);
+      ?>
+
+          <?php foreach ($result as $row):?>
+          <?php $row['live_url'];?>
+          <?php endforeach;?>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Events</button>
+      <button class="tablinks" onclick="openCity(event, 'Livestream')">Livestream</button>
+
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <div class="contianer embed-responsive embed-responsive-16by9" style="width: 100%; height: 100%;">
+      <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+    </div>
+
+  </div>
+
+  <div id="Livestream" class="tabcontent">
+    <div class="livestream" style="width: 100%; height: 100%;">
+  <p>Hello</p>
+  </div>
+
+  </div>
+  </div>
+
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
 
 <div class="container">
 <center>  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"><br>
