@@ -19,151 +19,68 @@
 
 </head>
 
-
-<body onload="zoom()" style="background: #161616;" >
-
-
 <?php include("includes/nav.inc.php"); ?>
 <?php include("chat.inc.php"); ?>
 
-<?php
-  // Create connection
-  $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
-  // Check connection
-  if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-  }
 
-$sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
+<div class="container">
 
-  $result = mysqli_query($conn, $sql);
-  mysqli_close($conn);
-  ?>
+  <?php
+    // Create connection
+    $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
 
-      <?php foreach ($result as $row):?>
-      <?php $row['live_url'];?>
-      <?php endforeach;?>
+  $sql = "SELECT * FROM `mpr_live` ORDER BY `live_id` DESC LIMIT 1";
 
-      <div class="container--tabs">
-      	<section class="">
-      		<ul class="nav nav-tabs">
-      			<li class="tab-button"><a href="#tab-1">Main Livestream</a></li>
-            <li class="tab-button"> | </li>
-      			<li class="tab-button"><a href="#tab-2">Special Events</a></li>
-      		</ul>
-      		<div class="tab-content">
-      			<div id="tab-1" class="tab-pane active">
-      				<span class=""></span>
-      				<span class="col-md-10">
-      					<h3>Livestream</h3>
-                <div class="livestream" style="width: 100%; height: 100%;">
-                <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
-      				</span>
-      			</div>
-          </div>
-      			<div id="tab-2" class="tab-pane">
-      				<span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-      				<span class="col-md-10">
-      					<h3>Events</h3>
-      					<p>This is the event tab</p>
-      				</span>
-      			</div>
-          </div>
-      	</section>
-      </div>
+    $result = mysqli_query($conn, $sql);
+    mysqli_close($conn);
+    ?>
 
-            <script>
+        <?php foreach ($result as $row):?>
+        <?php $row['live_url'];?>
+        <?php endforeach;?>
 
-            window.addEventListener("load", function() {
-      	// store tabs variable
-      	var myTabs = document.querySelectorAll("ul.nav-tabs > li");
-        function myTabClicks(tabClickEvent) {
-      		for (var i = 0; i < myTabs.length; i++) {
-      			myTabs[i].classList.remove("active");
-      		}
-      		var clickedTab = tabClickEvent.currentTarget;
-      		clickedTab.classList.add("active");
-      		tabClickEvent.preventDefault();
-      		var myContentPanes = document.querySelectorAll(".tab-pane");
-      		for (i = 0; i < myContentPanes.length; i++) {
-      			myContentPanes[i].classList.remove("active");
-      		}
-      		var anchorReference = tabClickEvent.target;
-      		var activePaneId = anchorReference.getAttribute("href");
-      		var activePane = document.querySelector(activePaneId);
-      		activePane.classList.add("active");
-      	}
-      	for (i = 0; i < myTabs.length; i++) {
-      		myTabs[i].addEventListener("click", myTabClicks)
-      	}
-      });row
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Livestream</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Events</button>
+  </div>
 
-            </script>
+  <div id="London" class="tabcontent">
+    <div class="livestream" style="width: 100%; height: 100%;">
+    <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+  </div>
 
-      <style>
+  <div id="Paris" class="tabcontent">
+    <div class="livestream" style="width: 100%; height: 100%;">
+    <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
+  </div>
 
-      .tab-button {
-        padding-right: 10px;
-        color: white;
-        font-size: 30px;
+</div>
+</div>
+
+  <script>
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
       }
-
-      .container--tabs {
-	margin: 2rem;
-
-	.nav-tabs {
-		float: left;
-		width: 100%;
-		margin: 0;
-		list-style-type: none;
-		> li {
-			float: left;
-			margin-bottom: -1px;
-
-			> a {
-				float: left;
-				margin-right: 2px;
-				padding: 10px;
-
-				&:hover {
-					border-color: #eee #eee #ddd;
-				}
-			}
-
-			&.active {
-				> a,
-				> a:hover,
-				> a:focus {
-					color: #555;
-					cursor: default;
-        }
-			}
-		}
-	}
-
-	.tab-content {
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+</div>
 
 
-		> .tab-pane {
-			display: none;
-      width: 100%;
-      height: 100%;
 
-			&.active {
-				display: block;
-				padding: 2.5% 3.5%;
-				background-color: #efefef;
-			}
-		}
-
-		> .active {
-			display: block;
-		}
-	}
-
-}
-      </style>
-
+<body style="background: #161616;" >
 
 
 
@@ -363,6 +280,49 @@ h2{
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+
+
 
 </style>
 
