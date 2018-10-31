@@ -53,7 +53,7 @@
 
     </div>
 
-    <div id="Paris" class="active tabcontent">
+    <div id="Paris" class="tabcontent" style="display: block;">
       <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="<?php echo $row['live_url'];?>"></iframe></div>
   </div>
 
