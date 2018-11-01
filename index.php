@@ -58,10 +58,7 @@
   </div>
 
   <div id="Livestream" class="tabcontent">
-    <div class="livestream" style="width: 100%; height: 100%;">
       <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="true" autoplay="true" src="https://livestream.com/accounts/25937168/events/8437304/player?&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div>
-  </div>
-  </div>
   </div>
 
     <script>
