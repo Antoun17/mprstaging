@@ -19,7 +19,7 @@
 <body>
   <div class="centered container rounded" style="background-color: grey; width: 100%; height: 25%;  text-align: center; vertical-align: middle; display: table-cell;">
     <div class="shirt">
-    <img src="/sites/default/files/tshirt.png">
+    <img src="/assets/tshirt.png">
     </div>
   </div>
 
