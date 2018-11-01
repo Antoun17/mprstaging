@@ -41,7 +41,7 @@
       <option> <?php echo 'https://livestream.com/accounts/25937168/events/7713617/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false' ?>
 
       <?php foreach ($result as $row):?>
-      <option label="<?php echo $row['episode_title']?>"> <?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . 'player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';?></option>
+      <option label="<?php echo $row['episode_title']?>"> <?php echo 'https://livestream.com/accounts/25937168/events/7713617/videos/' . $row['episode_url'] . 'player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false';?></option>
       <?php endforeach;?>
       </select>
     </div>
