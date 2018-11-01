@@ -50,7 +50,7 @@ Your generous and fully tax-deductible gift to Maker Park Radio, Inc. will help 
 
 <div class="centered container rounded">
   <div class="shirt">
-  <center> <img src="/sites/default/files/Sponsor.png"> </center>
+  <center> <img src="/assets/Sponsor.png"> </center>
   </div>
 </div>
 
