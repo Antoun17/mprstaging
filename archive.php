@@ -56,22 +56,7 @@
                <?php echo $row['episode_date']; ?>
               </h2>
 
-              <?php
-
-              if ($sqllive = "SELECT `episode_url_type` FROM `mpr_episode` WHERE episode_url_type = 'LIVESTREAM'";) {
-              $result = mysqli_query($conn, $sqllive);
-              echo "This is a Livestream URL";
-
-            } elseif ($sqlrestream = "SELECT `episode_url_type` FROM `mpr_episode` WHERE episode_url_type = 'RESTREAM'";) {
-              $result = mysqli_query($conn, $sqlrestream);
-                echo "This is a Restream URL";
-              }
-
-              ?>
-
-
-
-
+    
                 <div class="container-fluid livestream" style="width: 100%; height: 100%;">
                 <div class="container-fluid embed-responsive embed-responsive-16by9">
                 <iframe allowfullscreen="true" class="embed-responsive-item" src="https://livestream.com/accounts/25937168/events/7713617/videos/<?php echo $row['episode_url']; ?>/player?enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false"></iframe></div></div>
@@ -104,7 +89,9 @@
                      echo "</h2><br>";
                      echo "<P>";
                      echo "</center>";
-                    $isfirst = 0;?>
+                    $isfirst = 0;
+
+                    ?>
                     <h2>Episodes</h2 style="color: white;">
                                 <section class="cards">
                     <?php
