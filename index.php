@@ -280,7 +280,7 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
     overflow: hidden;
-    width: auto;
+    width: 200px;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
