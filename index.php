@@ -93,11 +93,13 @@
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
       </div>
 
-      <center style="padding-top: 30px; padding-bottom: 30px; width: 50%; height: 50%;">
+<div class="containr" style="padding-top: 30px; padding-bottom: 30px; width: 50%; height: 50%;">
+
+      <center>
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> </link>
 
-            <div class="container wbackground"id="mc_embed_signup container" style="border-radius: 25px;">
+            <div class="wbackground"id="mc_embed_signup" style="border-radius: 25px;">
             <form action="https://nyc.us16.list-manage.com/subscribe/post?u=6338c9a8cce6df046dc5ff501&amp;id=d312a7841c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             	<h2>Subscribe to our mailing list</h2>
@@ -125,7 +127,8 @@
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
             <!--End mc_embed_signup-->
-      </center style="padding-top: 25px;">
+      </center>
+    </div>
 
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
