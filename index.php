@@ -93,7 +93,7 @@
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
       </div>
 
-<div class="containr" style="padding-top: 30px; padding-bottom: 30px; width: 50%; height: 50%;">
+<div class="container" style="padding-top: 30px; padding-bottom: 30px; width: 50%; height: 50%;">
 
       <center>
       <!-- Begin MailChimp Signup Form -->
