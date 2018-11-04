@@ -299,7 +299,8 @@ body {font-family: Arial;}
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #161616;
+    color: white;
 }
 
 /* Style the tab content */
