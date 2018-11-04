@@ -210,6 +210,7 @@ h2{
 .slick-track
 {
     position: relative;
+    height: 20%;
     top: 0;
     left: 0;
     display: block;
