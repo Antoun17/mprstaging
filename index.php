@@ -103,7 +103,7 @@
             	<h2>Subscribe to our mailing list</h2>
               <label  style="float: left;" for="mce-EMAIL">Email Address </label>
             <div class="form-group">
-            	<input class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            	<input style="float: left;" class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <label style="float: left;" for="mce-FNAME">First Name </label>
             <div class="form-group">
