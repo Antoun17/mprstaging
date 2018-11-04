@@ -124,10 +124,10 @@
       <!--End mc_embed_signup-->
 </center>
       <!-- SnapWidget -->
-      <div class="container">
+      <div class="responsive container">
         <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+<iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; width:100%; "></iframe>
       </div>
 
 
