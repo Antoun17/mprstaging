@@ -277,13 +277,12 @@ body {font-family: Arial;}
 .tab {
     overflow: hidden;
     width: 250px;
-    radius: 10px;
-    background-color: #F5B64F;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
+    background-color: #F5B64F;
+    radius: 10px;
     float: 10px right;
     border: none;
     outline: none;
