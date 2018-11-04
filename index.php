@@ -87,13 +87,13 @@
 
 
       <!-- SnapWidget -->
-      <div class="responsive container" style="display: block; width: 50%; height: 50%">
+      <div class="responsive container" style="display: block;">
         <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
       </div>
 
-      <center style="padding-top: 30px; padding-bottom: 30px;">
+      <center style="padding-top: 30px; padding-bottom: 30px; width: 50%; height: 50%;">
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> </link>
 
