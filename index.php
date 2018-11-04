@@ -93,38 +93,32 @@
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
       </div>
 
-      <center>
+      <center style="padding-top: 20px;">
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> </link>
-      <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:200px; margin-left: 1100px; height: }
-        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
-
 
             <div class="container wbackground"id="mc_embed_signup container" style="border-radius: 25px;">
             <form action="https://nyc.us16.list-manage.com/subscribe/post?u=6338c9a8cce6df046dc5ff501&amp;id=d312a7841c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             	<h2>Subscribe to our mailing list</h2>
+              <label for="mce-EMAIL">Email Address </label>
             <div class="form-group">
-            	<label for="mce-EMAIL">Email Address </label>
-            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            	<input class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
+            <label for="mce-FNAME">First Name </label>
             <div class="form-group">
-            	<label for="mce-FNAME">First Name </label>
-            	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            	<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
             </div>
             <div class="form-group">
             	<label for="mce-LNAME">Last Name </label>
-            	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            	<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
             </div>
             	<div id="mce-responses" class="clear">
             		<div class="response" id="mce-error-response" style="display:none"></div>
             		<div class="response" id="mce-success-response" style="display:none"></div>
             	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6338c9a8cce6df046dc5ff501_d312a7841c" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div style="padding-bottom:10px;"class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
             </form>
             </div>
