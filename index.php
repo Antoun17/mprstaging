@@ -276,15 +276,14 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
     overflow: hidden;
-    padding-left: 10px;
+    padding-left: 11px;
     width: 250px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
     background-color: #161616;
-    radius: 10px;
-    float: 10px right;
+    color: white;
     border: none;
     outline: none;
     cursor: pointer;
@@ -301,7 +300,6 @@ body {font-family: Arial;}
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #F5B64F;
-    color: white;
 }
 
 /* Style the tab content */
