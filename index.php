@@ -101,9 +101,9 @@
             <form action="https://nyc.us16.list-manage.com/subscribe/post?u=6338c9a8cce6df046dc5ff501&amp;id=d312a7841c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             	<h2>Subscribe to our mailing list</h2>
-              <label  style="float: left;" for="mce-EMAIL">Email Address </label>
+              <label for="mce-EMAIL">Email Address </label>
             <div class="form-group">
-            	<input style="float: left;" class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            	<input class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <label style="float: left;" for="mce-FNAME">First Name </label>
             <div class="form-group">
