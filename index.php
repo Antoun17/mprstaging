@@ -282,7 +282,7 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: #F5B64F;
+    background-color: #161616;
     radius: 10px;
     float: 10px right;
     border: none;
@@ -300,7 +300,7 @@ body {font-family: Arial;}
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #161616;
+    background-color: #F5B64F;
     color: white;
 }
 
