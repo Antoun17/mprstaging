@@ -29,6 +29,7 @@
 
 <body style="background: #161616;" >
 
+
     <?php
       // Create connection
       $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "baac30b8c10ebe", "347a5eea", "heroku_3550e03eba1161b");
@@ -86,7 +87,7 @@
 
 
       <!-- SnapWidget -->
-      <div class="responsive container">
+      <div class="responsive container" style="display: block;">
         <!-- SnapWidget -->
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
@@ -130,7 +131,7 @@
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
             <!--End mc_embed_signup-->
-      </center>
+      </center style="padding-top: 25px;">
 
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
