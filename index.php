@@ -276,7 +276,7 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
     overflow: hidden;
-    width: 300px;
+    width: 250px;
     radius: 10px;
     background-color: #F5B64F;
 }
@@ -284,7 +284,7 @@ body {font-family: Arial;}
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
-    float: left;
+    float: 10px right;
     border: none;
     outline: none;
     cursor: pointer;
