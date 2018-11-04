@@ -276,6 +276,7 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
     overflow: hidden;
+    padding-left: 10px;
     width: 250px;
 }
 
