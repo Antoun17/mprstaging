@@ -141,7 +141,6 @@
    <section class="customer-logos slider">
     <div class="slide"> <a href="https://www.makerspace.nyc/"> <img src="assets/mprsponsors/simakerspace.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="https://www.empressgreen.com/" ><img src="assets/mprsponsors/expressgreen.jpeg" alt="HTML tutorial"></a> </div>
-    <div class="slide"> <a href="https://www.tfeesstraw.com/" ><img src="assets/mprsponsors/tfees.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="https://5050store.com/" ><img src="assets/mprsponsors/5050.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="http://pesochin.video/" ><img src="assets/mprsponsors/gp-logo.png" alt="HTML tutorial"></a> </div>
     <div class="slide"> <a href="https://projectivitygroup.org/" ><img src="assets/mprsponsors/projectivity.png" alt="HTML tutorial"></a> </div>
