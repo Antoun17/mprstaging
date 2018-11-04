@@ -93,7 +93,7 @@
 <iframe src="https://snapwidget.com/embed/520535" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style=" display:block; margin: 0 auto; border:none; width:100%; "></iframe>
       </div>
 
-      <center style="padding-top: 20px; padding-bottom: 20px;">
+      <center style="padding-top: 30px; padding-bottom: 30px;">
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> </link>
 
@@ -101,16 +101,16 @@
             <form action="https://nyc.us16.list-manage.com/subscribe/post?u=6338c9a8cce6df046dc5ff501&amp;id=d312a7841c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             	<h2>Subscribe to our mailing list</h2>
-              <label for="mce-EMAIL">Email Address </label>
+              <label  style="float: left;" for="mce-EMAIL">Email Address </label>
             <div class="form-group">
             	<input class="from-control" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
-            <label for="mce-FNAME">First Name </label>
+            <label style="float: left;" for="mce-FNAME">First Name </label>
             <div class="form-group">
             	<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
             </div>
             <div class="form-group">
-            	<label for="mce-LNAME">Last Name </label>
+            	<label style="float: left;" for="mce-LNAME">Last Name </label>
             	<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
             </div>
             	<div id="mce-responses" class="clear">
