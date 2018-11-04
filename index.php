@@ -278,7 +278,7 @@ body {font-family: Arial;}
     overflow: hidden;
     width: 300px;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #161616;
 }
 
 /* Style the buttons inside the tab */
