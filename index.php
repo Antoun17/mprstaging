@@ -118,7 +118,7 @@
             		<div class="response" id="mce-success-response" style="display:none"></div>
             	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6338c9a8cce6df046dc5ff501_d312a7841c" tabindex="-1" value=""></div>
-                <div style="padding-bottom:10px;"class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div style="padding-bottom:10px;"class="btn btn-primary" ><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
             </form>
             </div>
