@@ -37,38 +37,23 @@
             ?>
 
 
+            <div class="card-group">
 
+             <?php foreach ($result as $row):?>
 
-<section class="cards">
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-
-
-<?php foreach ($result as $row):
-
-
-
-    echo "<div class='container'>";
-    echo "<div class='row'>";
-    $imagen = $row["Imagen"];
-    $categoria = $row["Categoria"];
-    echo "<div class='col-6 col-sm-4 col-md-3'>";
-    echo "<div class='card mb-2'>";
-    echo "<img class='card-img-top' src='./img/$imagen' alt='$categoria'>";
-    echo "<div class='card-body'>";
-    echo "<form action='go.php' method='post'>";
-    echo "<h5 class='card-title'>$categoria</h5>";
-    echo "<input type='hidden' name='producto' id='hiddenField' value='$categoria'>";
-    echo "<input class='btn' type='submit' value='ver más'>";
-    echo "</form>";
-    echo "</div>";
-    echo "</div>";
-    echo "</div>";
-    echo "</div>";
-
-
-?>
-
-</section>
+                   <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
+                     <div class="card">
+                         <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
+                         <div class="card-body">
+                           <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
+                           <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
+                           <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
+                         </div>
+                     </div>
+                 </div>
+               </div>
 
              <!-- .card -->
            <?php endforeach;
