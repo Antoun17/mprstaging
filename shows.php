@@ -43,7 +43,7 @@
     ?>
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
     <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
-      <div class="card" style="padding-top: 35px; padding-bottom: 35px; margin-bottom: 30px;">
+      <div class="card" style="background-color: #3a3a3a; padding-top: 35px; padding-bottom: 35px; margin-bottom: 30px;">
           <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
           <div class="card-body">
             <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
