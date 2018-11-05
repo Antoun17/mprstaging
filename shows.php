@@ -36,6 +36,7 @@
             $result = mysqli_query($conn, $sql);
             ?>
 
+<div class="row">
 
 <?php
   foreach ($result as $row){
@@ -51,7 +52,7 @@
     <?php
 }
 ?>
-
+</div>
               <!-- .card -->
 
             <style>
