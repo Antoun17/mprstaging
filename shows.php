@@ -37,15 +37,16 @@
             ?>
 
 
-<div class="container">
-  <div class="row">
+
+
 
 
 <?php foreach ($result as $row):
 
 
 
-
+    echo "<div class='container'>";
+    echo "<div class='row'>";
     $imagen = $row["Imagen"];
     $categoria = $row["Categoria"];
     echo "<div class='col-6 col-sm-4 col-md-3'>";
@@ -60,12 +61,11 @@
     echo "</div>";
     echo "</div>";
     echo "</div>";
+    echo "</div>";
 
 
 ?>
 
-</div>
-  </div>
 
              <!-- .card -->
            <?php endforeach;
