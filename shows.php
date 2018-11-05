@@ -38,28 +38,28 @@
 
 
 
-             <?php foreach ($result as $row):?>
-
-
-          
-
-               <div class="container">
-                <div class="row">
-    <div class='col-6 col-sm-4 col-md-3'>
-      <div class="card mb-2">
-        <img class='card-img-top' src='./img/$imagen' alt='$categoria'>
-        <div class='card-body'>
-          <form action='go.php' method='post'>
-            <h5 class='card-title'>$categoria</h5>
-            <input type='hidden' name='producto' id='hiddenField' value='$categoria'>
-            <input class='btn' type='submit' value='ver más'>
-          </form>
-        </div>
-      </div>
-    </div>
+             <?php foreach ($result as $row):
 
 
 
+
+               $imagen = $row["Imagen"];
+    $categoria = $row["Categoria"];
+    echo "<div class='col-6 col-sm-4 col-md-3'>";
+    echo "<div class='card mb-2'>";
+    echo "<img class='card-img-top' src='./img/$imagen' alt='$categoria'>";
+    echo "<div class='card-body'>";
+    echo "<form action='go.php' method='post'>";
+    echo "<h5 class='card-title'>$categoria</h5>";
+    echo "<input type='hidden' name='producto' id='hiddenField' value='$categoria'>";
+    echo "<input class='btn' type='submit' value='ver más'>";
+    echo "</form>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+
+
+?>
 
 
 
