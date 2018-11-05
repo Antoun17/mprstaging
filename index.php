@@ -130,6 +130,12 @@
       </center>
     </div>
 
+
+    <div class="container gcalendar">
+    <center>  <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=e13rd7dtkjr7ba0lr6t4178n4s%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="100%" height="700px" frameborder="0" scrolling="no"></iframe> </center>
+    </div>
+
+
 <div class="sponsorslider container">
   <h2>Our  Sponsors</h2>
    <section class="customer-logos slider">
