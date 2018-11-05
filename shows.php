@@ -42,27 +42,26 @@
 
 
                <div class="row">
-                 <div class="col" style="background-color:yellow;">25%</div>
-                 <div class="col" style="background-color:orange;">25%</div>
-                 <div class="col" style="background-color:yellow;">25%</div>
-                 <div class="col" style="background-color:orange;">25%</div>
-               </div>
-             </div>
-
-
-                   <div class="row">
-                     <div class="col-sm-2">
-                     <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
-                       <div class="card">
-                           <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
-                           <div class="card-body">
-                             <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
-                             <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                             <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
-                           </div>
-                       </div>
+                 <div class="col">
+                   <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
+                     <div class="card">
+                         <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
+                         <div class="card-body">
+                           <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
+                           <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
+                           <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
+                         </div>
                      </div>
-                   </div>
+                 </div>
+               </div>
+             
+
+
+
+
+
+
+
 
              <!-- .card -->
            <?php endforeach;
