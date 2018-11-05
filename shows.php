@@ -39,6 +39,8 @@
 
 
 
+<section class="cards">
+
 
 
 <?php foreach ($result as $row):
@@ -66,6 +68,7 @@
 
 ?>
 
+</section>
 
              <!-- .card -->
            <?php endforeach;
