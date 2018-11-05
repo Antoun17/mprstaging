@@ -40,6 +40,16 @@
 
              <?php foreach ($result as $row):?>
 
+
+               <div class="row">
+                 <div class="col" style="background-color:yellow;">25%</div>
+                 <div class="col" style="background-color:orange;">25%</div>
+                 <div class="col" style="background-color:yellow;">25%</div>
+                 <div class="col" style="background-color:orange;">25%</div>
+               </div>
+             </div>
+
+
                    <div class="row">
                      <div class="col-sm-2">
                      <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
