@@ -15,7 +15,7 @@
     <title>Shows Page</title>
 </head>
 
-<body>
+<body style="background: #161616;>
 
 <?php include("includes/nav.inc.php"); ?>
 
@@ -36,7 +36,7 @@
             $result = mysqli_query($conn, $sql);
             ?>
 
-<div class="row">
+<div class="row" style="padding-top: 25px;">
 
 <?php
   foreach ($result as $row){
