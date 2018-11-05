@@ -37,10 +37,11 @@
             ?>
 
 <div class="row">
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
 <?php
   foreach ($result as $row){
     ?>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
     <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
       <div class="card">
           <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
@@ -50,12 +51,13 @@
             <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
           </div>
       </div>
+      </div>
     <?php
 }
 ?>
 
 </div>
-  </div>
+
 
   </body>
 
