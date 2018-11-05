@@ -41,33 +41,22 @@
              <?php foreach ($result as $row):?>
 
 
-               <div class="row">
-                 <div class="col">
-                   <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
-                     <div class="card">
-                         <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
-                         <div class="card-body">
-                           <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
-                           <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                           <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
-                         </div>
-                     </div>
-                 </div>
-               </div>
-               
-               <div class="card">
-                 <a href="shows.php?show_id=<?php echo $row['show_id']; ?>">
-                   <figure class="thumbnail">
-                   <img src="<?php echo $row['show_img']; ?>" alt="meow">
-                   </figure>
-                   <div class="card-content">
-                     <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
-                     <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                     <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
-                   <!-- .card-content -->
-                 </a>
-               </div>
-               </div>
+          
+
+               <div class="container">
+                <div class="row">
+    <div class='col-6 col-sm-4 col-md-3'>
+      <div class="card mb-2">
+        <img class='card-img-top' src='./img/$imagen' alt='$categoria'>
+        <div class='card-body'>
+          <form action='go.php' method='post'>
+            <h5 class='card-title'>$categoria</h5>
+            <input type='hidden' name='producto' id='hiddenField' value='$categoria'>
+            <input class='btn' type='submit' value='ver más'>
+          </form>
+        </div>
+      </div>
+    </div>
 
 
 
