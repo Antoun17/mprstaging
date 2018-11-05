@@ -37,27 +37,20 @@
             ?>
 
 
-            <div class="card-group">
-
-             <?php foreach ($result as $row):?>
-
-             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-
-                 </div>
-               </div>
-
-             <!-- .card -->
-           <?php endforeach;   mysqli_close($conn); ?>
-
-           <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"> </a>
-             <div class="card">
-                 <img src="<?php echo $row['show_img']; ?>" class="card-img-top img-adjusted">
-                 <div class="card-body">
-                   <h2> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>"><?php echo $row['show_name']; ?></a></h2>
-                   <p class="card-text collapse" id="viewdetails<?php echo $row['show_id']; ?>"><?php echo $row['show_desc']; ?></p>
-                   <p><a class="btn btn-warning " data-toggle="collapse" data-target="#viewdetails<?php echo $row['show_id']; ?>">Show Info</a> <a href="shows.php?show_id=<?php echo $row['show_id']; ?>" class="btn btn-warning">Archives</a> </p>
-                 </div>
-             </div>
+<?php
+  foreach ($result as $row){
+    ?>
+    <div class="card" style="max-width:319px;">
+        <img src="<?=$response['fields']['thumbnail']?>" class="card-img-top" alt="Card image" />
+        <div class="card-block">
+            <h4 class="card-title"><?=$response['fields']['headline']?></h4>
+            <p class="card-text"><?=$response['fields']['trailText']?></p>
+            <a href="<?=$response['fields']['shortUrl']?>" class="btn btn-success">Button</a>
+        </div>
+    </div>
+    <?php
+}
+?>
 
               <!-- .card -->
 
