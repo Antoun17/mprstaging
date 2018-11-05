@@ -37,7 +37,7 @@
             ?>
 
 <div class="row">
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
 <?php
   foreach ($result as $row){
     ?>
@@ -55,17 +55,8 @@
 ?>
 
 </div>
-</div>
 
-            <style>
-
-            @media (min-width: 768px) {
-              .row.equal {
-                display: flex;
-                flex-wrap: wrap;
-              }
-            }
-            </style>
+        
   </body>
 
 
